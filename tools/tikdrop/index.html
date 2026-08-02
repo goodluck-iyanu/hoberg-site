@@ -3,34 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Download TikTok videos without watermark for free. TikDrop is a fast, online TikTok downloader for HD MP4 and MP3 on iPhone, Android, and PC.">
-    <title>TikDrop - TikTok Video Downloader (No Watermark)</title>
+    <meta name="description" content="TikDrop: Free TikTok video downloader. Save MP4 videos without watermarks in HD quality. Built by Hoberg Digital Agency.">
+    <title>TikDrop - TikTok Downloader | Hoberg Tools</title>
     
     <!-- Favicon placeholder -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Fonts: Playfair Display (Headlines) & DM Sans (Body) -->
+    <!-- Fonts: Playfair Display & DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-    <!-- SEO Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "TikDrop TikTok Downloader",
-      "url": "https://tikdrop.com",
-      "description": "Free online tool to download TikTok videos without watermarks in HD quality.",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
 
     <style>
         /* Hoberg Brand Variables */
@@ -47,468 +29,360 @@
         }
 
         /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: var(--font-body);
             color: var(--h-black);
             background-color: var(--h-white);
-            line-height: 1.5;
-            font-size: 16px;
+            line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
-        h1, h2, h3 {
-            font-family: var(--font-head);
-            font-weight: 700;
-            line-height: 1.2;
-        }
-        a { text-decoration: none; color: inherit; }
+        h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; }
+        a { text-decoration: none; color: inherit; transition: color 0.2s; }
+        a:hover { color: var(--h-red); }
+        ul { list-style: none; }
         
-        /* Layout */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        /* Layout Utilities */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+        .section-padding { padding: 80px 0; }
+        .text-center { text-align: center; }
 
         /* Navigation */
         nav {
+            background-color: var(--h-black);
+            color: var(--h-white);
+            padding: 20px 24px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 16px 20px;
-            border-bottom: 1px solid var(--h-light-gray);
+            border-bottom: 1px solid #222;
         }
-        .logo {
-            font-family: var(--font-head);
-            font-size: 24px;
-            font-weight: 700;
-        }
-        .logo span { color: var(--h-red); }
+        .nav-logo { font-family: var(--font-head); font-size: 24px; font-weight: 700; }
+        .nav-logo span { color: var(--h-red); }
+        .nav-links a { margin-left: 24px; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: var(--h-red); }
 
         /* Hero Section */
         .hero {
             background-color: var(--h-black);
             color: var(--h-white);
-            padding: 60px 20px;
+            padding: 80px 20px 100px;
             text-align: center;
         }
-        .hero h1 {
-            font-size: clamp(32px, 5vw, 48px);
-            margin-bottom: 12px;
+        .hero-eyebrow {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 24px;
         }
-        .hero p {
-            color: var(--h-light-gray);
-            font-size: 16px;
-            margin-bottom: 32px;
-        }
+        .hero-eyebrow a { font-weight: 700; color: var(--h-white); text-decoration: underline; }
+        .hero-eyebrow a:hover { color: var(--h-red); }
+        
+        .hero h1 { font-size: clamp(36px, 5vw, 56px); margin-bottom: 16px; }
+        .hero p { color: var(--h-light-gray); font-size: 18px; max-width: 600px; margin: 0 auto 40px; }
 
-        /* Search Box */
-        .search-box {
+        /* Downloader UI */
+        .downloader-ui {
             background: var(--h-white);
-            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 8px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        @media (min-width: 600px) {
+            .downloader-ui { flex-direction: row; }
+        }
+        .input-group {
+            flex: 1;
             display: flex;
             align-items: center;
-            padding: 8px 16px;
-            max-width: 600px;
-            margin: 0 auto 16px;
+            background: var(--h-light-gray);
+            border-radius: 4px;
+            padding: 0 16px;
         }
-        .search-box input {
-            flex: 1;
+        .input-group input {
+            width: 100%;
             border: none;
-            outline: none;
+            background: transparent;
+            padding: 16px 0;
             font-family: var(--font-body);
             font-size: 16px;
-            padding: 12px 0;
             color: var(--h-black);
-        }
-        .search-box input::placeholder {
-            color: var(--h-mid-gray);
+            outline: none;
         }
         .paste-btn {
             background: none;
             border: none;
             cursor: pointer;
-            padding: 8px;
-            display: flex;
-            align-items: center;
             color: var(--h-mid-gray);
+            padding: 8px;
         }
-        .paste-btn svg { width: 24px; height: 24px; fill: currentColor; }
-        
-        .download-btn {
+        .paste-btn:hover { color: var(--h-black); }
+        .btn {
             background-color: var(--h-red);
             color: var(--h-white);
             border: none;
-            border-radius: 8px;
+            padding: 16px 32px;
             font-family: var(--font-body);
             font-weight: 700;
-            font-size: 18px;
-            padding: 16px;
-            width: 100%;
-            max-width: 600px;
+            font-size: 16px;
             cursor: pointer;
-            transition: opacity 0.2s;
+            border-radius: 4px;
+            transition: background 0.2s;
+            text-align: center;
         }
-        .download-btn:hover { opacity: 0.9; }
-        .download-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+        .btn:hover { background-color: #a30015; color: var(--h-white); }
+        .btn-outline { background: transparent; border: 2px solid var(--h-black); color: var(--h-black); }
+        .btn-outline:hover { background: var(--h-black); color: var(--h-white); }
 
-        /* Result Card (Hidden by default) */
-        .result-card {
+        /* Processing/Result Card */
+        .result-area {
             display: none;
-            background: var(--h-white);
-            border-radius: 12px;
-            padding: 24px;
-            margin: -40px auto 40px;
-            max-width: 600px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            position: relative;
-        }
-        .result-card.active { display: block; }
-        .video-meta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-        .video-thumb {
-            width: 80px;
-            height: 100px;
             background: var(--h-light-gray);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border: 1px solid #E0E0E0;
+            max-width: 700px;
+            margin: 24px auto 0;
+            padding: 24px;
+            border-radius: 4px;
+            text-align: left;
         }
-        .video-info h3 { font-size: 16px; font-family: var(--font-body); margin-bottom: 8px;}
-        .video-info p { color: var(--h-mid-gray); font-size: 14px; }
-        .action-btn {
-            display: block;
-            width: 100%;
-            padding: 14px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 700;
-            margin-bottom: 12px;
-            border: 2px solid transparent;
-            cursor: pointer;
-        }
-        .btn-primary { background: var(--h-red); color: var(--h-white); }
-        .btn-secondary { background: var(--h-white); color: var(--h-black); border-color: var(--h-black); }
-        .btn-gold { background: var(--h-gold); color: var(--h-black); }
-
-        /* Sections */
-        .section-padding { padding: 60px 0; }
-        .section-title {
-            text-align: center;
-            font-size: clamp(24px, 4vw, 32px);
-            margin-bottom: 40px;
+        .result-area.active { display: block; }
+        .result-area h3 { font-family: var(--font-body); font-size: 18px; margin-bottom: 16px; color: var(--h-black); }
+        .result-actions { display: flex; flex-direction: column; gap: 12px; }
+        @media (min-width: 600px) {
+            .result-actions { flex-direction: row; }
+            .result-actions .btn { flex: 1; }
         }
 
-        /* How to Steps */
-        .steps-grid {
+        /* Tools Ecosystem Section */
+        .ecosystem { background-color: var(--h-cream); }
+        .ecosystem-header { text-align: center; margin-bottom: 48px; }
+        .ecosystem-header h2 { font-size: 32px; margin-bottom: 12px; }
+        .ecosystem-header p { color: var(--h-mid-gray); font-size: 18px; }
+
+        .tools-grid {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
-            margin-top: 32px;
         }
-        .step-card {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-        .step-number {
-            background: var(--h-light-gray);
-            color: var(--h-red);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-        .step-text h3 { font-size: 18px; margin-bottom: 4px; font-family: var(--font-body);}
-        .step-text p { color: var(--h-mid-gray); font-size: 14px; }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .feature-card {
-            background: var(--h-light-gray);
+        .tool-card {
+            background: var(--h-white);
             padding: 24px;
-            border-radius: 8px;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            position: relative;
+            transition: transform 0.2s, border-color 0.2s;
         }
-        .feature-icon {
-            color: var(--h-red);
-            margin-bottom: 16px;
+        .tool-card:hover { border-color: var(--h-black); transform: translateY(-2px); }
+        .tool-icon { font-size: 32px; margin-bottom: 16px; }
+        .tool-badge {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 2px;
+            text-transform: uppercase;
         }
-        .feature-card h3 { font-size: 18px; margin-bottom: 8px; font-family: var(--font-body);}
-        .feature-card p { color: var(--h-mid-gray); font-size: 14px; }
+        .badge-live { background: var(--h-red); color: var(--h-white); }
+        .badge-soon { background: var(--h-light-gray); color: var(--h-mid-gray); }
+        .tool-card h3 { font-family: var(--font-body); font-size: 18px; margin-bottom: 8px; }
+        .tool-card p { color: var(--h-mid-gray); font-size: 14px; }
 
-        /* FAQ Accordion */
-        .faq-item {
-            border-bottom: 1px solid var(--h-light-gray);
-            padding: 16px 0;
-        }
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            font-weight: 500;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            color: var(--h-mid-gray);
-            font-size: 14px;
-            padding-top: 0;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 200px;
-            padding-top: 12px;
-        }
-        .faq-icon {
-            transition: transform 0.3s;
-        }
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
+        /* Agency CTA Section */
+        .agency-cta { background-color: var(--h-black); color: var(--h-white); text-align: center; }
+        .agency-cta h2 { font-size: 36px; margin-bottom: 16px; }
+        .agency-cta p { color: var(--h-light-gray); font-size: 18px; max-width: 600px; margin: 0 auto 32px; }
 
         /* Footer */
-        footer {
-            background: var(--h-black);
-            color: var(--h-white);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        footer p { color: var(--h-mid-gray); font-size: 14px; margin-top: 20px; }
-
+        footer { background-color: var(--h-light-gray); color: var(--h-black); padding: 60px 20px 40px; }
+        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 1000px; margin: 0 auto; border-bottom: 1px solid #E0E0E0; padding-bottom: 40px; }
         @media (min-width: 768px) {
-            .steps-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
         }
+        .footer-brand .f-logo { font-family: var(--font-head); font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .footer-brand .f-logo span { color: var(--h-red); }
+        .footer-brand p { color: var(--h-mid-gray); font-size: 14px; max-width: 300px; }
+        .footer-links h4 { font-family: var(--font-body); font-size: 16px; margin-bottom: 16px; }
+        .footer-links ul li { margin-bottom: 12px; }
+        .footer-links ul li a { color: var(--h-mid-gray); font-size: 14px; }
+        .footer-links ul li a:hover { color: var(--h-red); }
+        
+        .footer-bottom { text-align: center; padding-top: 24px; color: var(--h-mid-gray); font-size: 12px; }
+        .footer-bottom p { margin-bottom: 8px; }
+        .footer-bottom strong { color: var(--h-black); }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">Tik<span>Drop</span></div>
+        <div class="nav-logo">Tik<span>Drop</span></div>
+        <div class="nav-links">
+            <a href="https://hoberg.com.ng/tools/">All Tools</a>
+            <a href="https://hoberg.com.ng/">Hoberg Agency</a>
+        </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <h1>TikTok Video Downloader</h1>
-            <p>Free online TikTok downloader. Save videos with no watermark in HD quality instantly.</p>
-            
-            <div class="search-box">
-                <input type="text" id="videoLink" placeholder="Paste TikTok video link here...">
-                <button class="paste-btn" id="pasteBtn" aria-label="Paste">
-                    <svg viewBox="0 0 24 24"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z"/></svg>
-                </button>
+            <div class="hero-eyebrow">
+                Made by <a href="https://hoberg.com.ng/tools/">Hoberg Tools</a>. Powered by <a href="https://hoberg.com.ng/">Hoberg Digital Agency</a>.
             </div>
-            <button class="download-btn" id="downloadBtn">Download</button>
+            <h1>TikTok Video Downloader</h1>
+            <p>Download TikTok videos with no watermark in HD quality. Fast, free, and completely online.</p>
+            
+            <div class="downloader-ui">
+                <div class="input-group">
+                    <input type="text" id="videoLink" placeholder="Paste TikTok video link here...">
+                    <button class="paste-btn" id="pasteBtn" title="Paste from clipboard">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z"/></svg>
+                    </button>
+                </div>
+                <button class="btn" id="downloadBtn">Download</button>
+            </div>
+
+            <div class="result-area" id="resultArea">
+                <h3>Video Ready for Download</h3>
+                <div class="result-actions">
+                    <button class="btn" onclick="alert('Downloading MP4...')">Download (No Watermark)</button>
+                    <button class="btn btn-outline" onclick="alert('Downloading HD...')">Download HD</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Result Area -->
-    <div class="result-card" id="resultCard">
-        <div class="video-meta">
-            <div class="video-thumb">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--h-mid-gray)"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-            <div class="video-info">
-                <h3>Video successfully processed</h3>
-                <p>Ready to save to your device.</p>
-            </div>
-        </div>
-        <button class="action-btn btn-primary" onclick="alert('Downloading...')">Download (No Watermark)</button>
-        <button class="action-btn btn-gold" onclick="alert('Downloading HD...')">Download HD (No Watermark)</button>
-        <button class="action-btn btn-secondary" id="resetBtn">Download Another Video</button>
-    </div>
-
-    <section class="section-padding" style="background: var(--h-cream);">
+    <section class="ecosystem section-padding">
         <div class="container">
-            <h2 class="section-title">How to Download TikTok Videos Without Watermarks</h2>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="step-text">
-                        <h3>Copy Video Link</h3>
-                        <p>Open the TikTok app, find the video you want, tap Share, and select 'Copy Link'.</p>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-text">
-                        <h3>Paste Link</h3>
-                        <p>Return to TikDrop and paste the copied link into the input field at the top of this page.</p>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="step-text">
-                        <h3>Download</h3>
-                        <p>Click the Download button to save the clean, watermark-free MP4 video to your device.</p>
-                    </div>
-                </div>
+            <div class="ecosystem-header">
+                <h2>More free tools from Hoberg</h2>
+                <p>TikDrop is the first tool in the Hoberg Tools ecosystem. More are on the way.</p>
             </div>
-        </div>
-    </section>
 
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">TikDrop Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                    </div>
-                    <h3>No Watermarks</h3>
-                    <p>We completely remove TikTok logos and creator tags for a clean, professional video.</p>
+            <div class="tools-grid">
+                <!-- Tool 1 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-live">Live</div>
+                    <div class="tool-icon">🎵</div>
+                    <h3>TikDrop</h3>
+                    <p>TikTok video downloader — no watermark, HD quality.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
-                    </div>
-                    <h3>All Devices Supported</h3>
-                    <p>Works seamlessly across iPhone, Android, PC, and Mac directly in your browser.</p>
+                <!-- Tool 2 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-soon">Coming Soon</div>
+                    <div class="tool-icon">🧮</div>
+                    <h3>Website Cost Calculator</h3>
+                    <p>Get a realistic estimate for your website project.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-                    </div>
-                    <h3>High Definition (HD)</h3>
-                    <p>Save videos in their original high resolution, ensuring crisp and clear MP4 playback.</p>
+                <!-- Tool 3 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-soon">Coming Soon</div>
+                    <div class="tool-icon">🏷️</div>
+                    <h3>SEO Meta Generator</h3>
+                    <p>Generate clean SEO titles and meta descriptions.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v9.28c-.47-.17-.97-.28-1.5-.28C8.01 12 6 14.01 6 16.5S8.01 21 10.5 21c2.31 0 4.2-1.75 4.45-4H15V6h4V3h-7z"/></svg>
-                    </div>
-                    <h3>Extract MP3 Audio</h3>
-                    <p>Need just the sound? Extract trending TikTok audio and save it as an MP3 file easily.</p>
+                <!-- Tool 4 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-soon">Coming Soon</div>
+                    <div class="tool-icon">🖼️</div>
+                    <h3>Image Compressor</h3>
+                    <p>Shrink image file sizes without losing quality.</p>
+                </div>
+                <!-- Tool 5 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-soon">Coming Soon</div>
+                    <div class="tool-icon">▦</div>
+                    <h3>QR Generator</h3>
+                    <p>Create QR codes for links, WiFi and contact cards.</p>
+                </div>
+                <!-- Tool 6 -->
+                <div class="tool-card">
+                    <div class="tool-badge badge-soon">Coming Soon</div>
+                    <div class="tool-icon">🔑</div>
+                    <h3>Password Generator</h3>
+                    <p>Generate strong, random passwords instantly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding" style="background: var(--h-light-gray);">
+    <section class="agency-cta section-padding">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Where are TikTok videos saved after being downloaded?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    By default, files are saved in your browser's designated "Downloads" folder. On mobile (iPhone or Android), you can usually find them in your Files app or Gallery.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    Do I need to install software or an extension?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    No. TikDrop is 100% online. You do not need to install any apps or browser extensions to save videos without watermarks.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    Is this TikTok downloader free?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    Yes. Our service is completely free to use. We do not charge subscriptions or put limits on how many videos you can download.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    How do I save TikTok videos to my iPhone?
-                    <span class="faq-icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    Due to Apple security policies, iOS users on older versions may need the "Documents by Readdle" app. However, if you are using iOS 13 or newer, you can download directly via the Safari browser.
-                </div>
-            </div>
+            <h2>Need more than a tool?</h2>
+            <p>Hoberg Digital Agency builds the whole website. Websites, branding, SEO and ads for Nigerian businesses — built by the same team behind TikDrop.</p>
+            <a href="https://hoberg.com.ng/" class="btn">Talk to Hoberg</a>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="logo">Tik<span>Drop</span></div>
-            <p>TikDrop is a free tool to download TikTok videos without watermarks. We are not affiliated with TikTok or ByteDance.</p>
-            <p>&copy; 2026 TikDrop. All rights reserved.</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="f-logo">Tik<span>Drop</span></div>
+                <p>TikDrop is a free TikTok video utility built and maintained by Hoberg Digital Agency, under the Hoberg Tools ecosystem.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Hoberg</h4>
+                <ul>
+                    <li><a href="https://hoberg.com.ng/">Homepage</a></li>
+                    <li><a href="https://hoberg.com.ng/">Blog</a></li>
+                    <li><a href="https://hoberg.com.ng/">Website Design</a></li>
+                    <li><a href="https://hoberg.com.ng/">SEO Services</a></li>
+                    <li><a href="https://hoberg.com.ng/">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Hoberg Tools</h4>
+                <ul>
+                    <li><a href="https://hoberg.com.ng/tools/">All Tools</a></li>
+                    <li><a href="#">TikDrop</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TikDrop. This tool is not affiliated with TikTok or ByteDance Ltd.</p>
+            <p><strong>Powered by Hoberg Digital Agency</strong></p>
         </div>
     </footer>
 
     <script>
-        // Paste Button Logic
+        // Paste functionality
         document.getElementById('pasteBtn').addEventListener('click', async () => {
             try {
                 const text = await navigator.clipboard.readText();
                 document.getElementById('videoLink').value = text;
             } catch (err) {
-                alert('Unable to read clipboard. Please paste manually.');
+                alert('Clipboard access denied. Please paste manually.');
             }
         });
 
-        // Download Simulation Logic
+        // Simulate Download Processing
         const downloadBtn = document.getElementById('downloadBtn');
-        const resultCard = document.getElementById('resultCard');
+        const resultArea = document.getElementById('resultArea');
         const inputField = document.getElementById('videoLink');
 
         downloadBtn.addEventListener('click', () => {
-            if(!inputField.value) {
-                alert('Please paste a valid TikTok link first.');
+            if(!inputField.value.trim()) {
+                alert('Please enter a TikTok URL.');
                 return;
             }
             
-            // Simulate processing
-            const originalText = downloadBtn.innerText;
             downloadBtn.innerText = 'Processing...';
             downloadBtn.disabled = true;
 
             setTimeout(() => {
-                downloadBtn.innerText = originalText;
+                downloadBtn.innerText = 'Download';
                 downloadBtn.disabled = false;
-                resultCard.classList.add('active');
-                resultCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 1500);
-        });
-
-        // Reset Button
-        document.getElementById('resetBtn').addEventListener('click', () => {
-            inputField.value = '';
-            resultCard.classList.remove('active');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // FAQ Accordion Logic
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentElement;
-                
-                // Close others
-                document.querySelectorAll('.faq-item').forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('active');
-                    }
-                });
-                
-                // Toggle current
-                item.classList.toggle('active');
-            });
+                resultArea.classList.add('active');
+            }, 1200);
         });
     </script>
 </body>
