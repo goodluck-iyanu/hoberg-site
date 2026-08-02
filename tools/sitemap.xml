@@ -1,0 +1,15 @@
+SITEMAP.XML — entries to add to your existing sitemap
+=========================================================
+Add these two <url> entries inside the existing <urlset> in your
+root sitemap.xml (don't replace the file, just add these entries):
+
+  <url>
+    <loc>https://hoberg.com.ng/tools/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/tools/tikdrop/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
