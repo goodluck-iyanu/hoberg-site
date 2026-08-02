@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 160" width="440" height="160">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8001C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0000F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="440" height="160" fill="#0E0B08" rx="14"/>
+  <!-- Drop mark, red gradient (dominant accent per brand rules) -->
+  <path d="M64 30 C 64 30, 96 66, 96 92 C 96 111, 81 126, 64 126 C 47 126, 32 111, 32 92 C 32 66, 64 30, 64 30 Z" fill="url(#redGrad)"/>
+  <path d="M56 74 L 80 92 L 56 110 Z" fill="#0E0B08"/>
+  <!-- Thin gold underline — sparing accent, matches Hoberg mark usage -->
+  <rect x="32" y="136" width="64" height="3" fill="#D4A843" rx="1.5"/>
+  <!-- Wordmark: Playfair Display, matching Hoberg's primary typeface -->
+  <text x="122" y="90" font-family="'Playfair Display', Georgia, serif" font-size="46" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">Tik<tspan fill="#E8001C">Drop</tspan></text>
+  <text x="124" y="116" font-family="'DM Sans', Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="3" fill="#D4A843">POWERED BY HOBERG TOOLS</text>
+</svg>
