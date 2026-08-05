@@ -1,8 +1,14 @@
-# Hoberg 2026 AI Visibility Report
-Pillar page for hoberg.com.ng/research/2026-ai-visibility-report
+# Hoberg AI Visibility Report 2026 - Final Fixed Logo
 
-SEO optimized for:
-- ai visibility, how to check ai visibility, how to get ai visibility
-- Hoberg Digital Agency, Hoberg Lagos, best digital agency in Nigeria
+Live after GitHub Pages: https://USERNAME.github.io/hoberg-ai-visibility-report/
 
-Deploy to GitHub Pages: Settings > Pages > Deploy from main branch /root
+Header:
+- Blog -> https://hoberg.com.ng/blog/
+- Tools -> https://hoberg.com.ng/tools
+- Contact -> https://hoberg.com.ng/blog/
+
+Logo: hoberg-logo.png exact black pill logo only - fixed visible
+
+SEO: ai visibility, how to check ai visibility, how to get ai visibility, Hoberg Digital Agency, best digital agency in Nigeria
+
+Deploy: Settings > Pages > main / root
