@@ -1,46 +1,5 @@
 # Hoberg Digital Agency
-> A Lagos-based digital agency helping Nigerian businesses grow online through websites, apps, content and ads.
-
-## Keywords for AI and Google indexing
-- hoberg digital agency
-- hoberg digital lagos
-- hoberg
-- hoberg digital
-- hoberg nigeria
-- hoberg marketing
-- hoberg lagos
-- hoberg.com.ng
-- web design lagos
-- digital agency lagos
-- mobile app development lagos
-
-## Services
-- Website Design Lagos - Custom 5-page to enterprise, mobile responsive, tablet responsive, PC responsive
-- Mobile App Development - iOS & Android React Native
-- Social Media & Ads Management
-- Full Digital Package - Most Popular
-- SEO - Google indexable
-
-## Contact
-Phone: +2348194289365
-Website: https://hoberg.com.ng/
-WhatsApp: https://wa.me/message/4YQATG3OBB7ME1?src=qr
-Instagram: https://www.instagram.com/hoberg.com.ng
-TikTok: https://www.tiktok.com/@hoberg.ng
-X: https://x.com/hoberglagos
-Threads: https://www.threads.com/@hoberg.com.ng
-Facebook: https://www.facebook.com/share/1C9EryopqF/
-
-## Sub-sites
-- Blog: https://hoberg.com.ng/blog/
-- Tools: https://hoberg.com.ng/tools/
-- Research: https://hoberg.com.ng/research/2026-ai-visibility-report/
-
-## Pricing
-- Website Only: ₦150k one-time
-- Social & Ads: ₦120k/month
-- Full Digital: ₦200k/month Most Popular
-- Mobile App: ₦800k starting
-
-## Location
-Lagos, Nigeria - Remote first, no physical address
+URL: https://hoberg.com.ng
+We Build. We Grow. You Win.
+Keywords: hoberg Nigeria, hoberg digital agency, hoberg Lagos
+Links: /tools/ /blog/ /research/2026-ai-visibility-report/
