@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ColeBox × Hoberg — Building a Better Way to Transact on WhatsApp</title>
+  <meta name="description" content="ColeBox and Hoberg are collaborating on a fintech experience designed to make transactions simpler and more accessible through WhatsApp. Coming soon.">
+  <meta name="keywords" content="ColeBox, Hoberg, ColeBox fintech, Hoberg Digital Agency, WhatsApp fintech, transactions on WhatsApp, fintech collaboration Nigeria">
+  <meta name="author" content="Hoberg Digital Agency">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#07090d">
+  <link rel="canonical" href="https://hoberg.com.ng/colebox/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ColeBox × Hoberg">
+  <meta property="og:title" content="ColeBox × Hoberg — Coming Soon">
+  <meta property="og:description" content="A new collaboration focused on making transactions simpler through WhatsApp.">
+  <meta property="og:url" content="https://hoberg.com.ng/colebox/">
+  <meta property="og:image" content="assets/colebox-hoberg-og.jpeg">
+  <meta property="og:image:alt" content="ColeBox and Hoberg collaboration">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ColeBox × Hoberg — Coming Soon">
+  <meta name="twitter:description" content="A new collaboration focused on making transactions simpler through WhatsApp.">
+  <meta name="twitter:image" content="assets/colebox-hoberg-og.jpeg">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"ColeBox × Hoberg Collaboration",
+    "description":"Official collaboration page for ColeBox and Hoberg Digital Agency.",
+    "url":"https://hoberg.com.ng/colebox/",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Hoberg Digital Agency",
+      "url":"https://hoberg.com.ng/"
+    },
+    "about":[
+      {"@type":"Organization","name":"ColeBox"},
+      {"@type":"Organization","name":"Hoberg Digital Agency","url":"https://hoberg.com.ng/"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#07090d;
+      --surface:#0d1118;
+      --surface-2:#111722;
+      --text:#f5f7fa;
+      --muted:#9ca6b5;
+      --line:rgba(255,255,255,.10);
+      --blue:#1769ff;
+      --blue-soft:#4c8dff;
+      --red:#ed0b2f;
+      --gold:#d9a72e;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 15% 12%, rgba(23,105,255,.20), transparent 65%),
+        radial-gradient(800px 500px at 88% 28%, rgba(237,11,47,.16), transparent 65%),
+        var(--bg);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:20;
+      background:rgba(7,9,13,.72);
+      border-bottom:1px solid transparent;
+      backdrop-filter:blur(18px);
+      transition:.25s ease;
+    }
+    .nav.scrolled{border-color:var(--line)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.03em}
+    .brand span{color:var(--gold)}
+    .nav-links{display:flex;gap:26px;align-items:center;color:#c9d0da;font-size:.93rem}
+    .nav-links a:hover{color:#fff}
+    .nav-cta{
+      padding:10px 16px;border:1px solid rgba(255,255,255,.15);
+      border-radius:999px;background:rgba(255,255,255,.05)
+    }
+    .hero{min-height:92vh;padding:150px 0 85px;display:grid;place-items:center;text-align:center;position:relative}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:9px;
+      border:1px solid var(--line);background:rgba(255,255,255,.035);
+      padding:8px 13px;border-radius:999px;color:#dce2ea;font-size:.83rem
+    }
+    .dot{width:7px;height:7px;border-radius:50%;background:#55d67a;box-shadow:0 0 0 5px rgba(85,214,122,.10)}
+    h1{
+      font-size:clamp(3rem,7.5vw,6.7rem);line-height:.95;letter-spacing:-.065em;
+      margin:25px auto 22px;max-width:1050px
+    }
+    .gradient{background:linear-gradient(100deg,#fff 18%,#9bbcff 47%,#ff889c 78%,#fff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-copy{max-width:720px;margin:auto;color:var(--muted);font-size:1.08rem}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:31px}
+    .btn{padding:13px 19px;border-radius:12px;font-weight:700;border:1px solid var(--line);transition:.2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:#fff;color:#090b10;border-color:#fff}
+    .btn-secondary{background:rgba(255,255,255,.04)}
+    .logos{
+      margin:64px auto 0;padding:26px 30px;
+      border:1px solid var(--line);background:rgba(255,255,255,.025);
+      border-radius:24px;display:flex;align-items:center;justify-content:center;gap:34px;
+      max-width:780px
+    }
+    .logo-card{height:95px;flex:1;display:grid;place-items:center}
+    .logo-card img{max-height:82px;width:auto;max-width:100%;object-fit:contain}
+    .plus{font-size:1.8rem;color:#7f8897;font-weight:300}
+    section{padding:95px 0}
+    .section-kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;color:#8d98a8;font-weight:800}
+    h2{font-size:clamp(2rem,4.5vw,3.8rem);line-height:1.03;letter-spacing:-.045em;margin:12px 0 18px}
+    .lead{color:var(--muted);max-width:690px;font-size:1.04rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:42px}
+    .card{
+      padding:27px;border:1px solid var(--line);border-radius:22px;
+      background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018))
+    }
+    .number{font-size:.76rem;color:#7e8998;font-weight:800;letter-spacing:.12em}
+    .card h3{margin:22px 0 9px;font-size:1.18rem}
+    .card p{margin:0;color:var(--muted);font-size:.95rem}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .visual{
+      border:1px solid var(--line);border-radius:28px;padding:22px;
+      background:rgba(255,255,255,.025)
+    }
+    .visual img{width:100%;border-radius:17px}
+    .quote{
+      margin-top:25px;padding:22px;border-left:2px solid var(--gold);
+      background:rgba(255,255,255,.025);color:#dce1e8;border-radius:0 14px 14px 0
+    }
+    .status{
+      margin-top:24px;display:inline-flex;gap:10px;align-items:center;
+      font-size:.9rem;color:#dce2e9
+    }
+    .status i{width:8px;height:8px;border-radius:50%;background:#ffbd3d}
+    .cta{
+      text-align:center;padding:75px 30px;border:1px solid var(--line);border-radius:30px;
+      background:
+        radial-gradient(600px 260px at 20% 50%,rgba(23,105,255,.17),transparent 70%),
+        radial-gradient(600px 260px at 80% 50%,rgba(237,11,47,.13),transparent 70%),
+        rgba(255,255,255,.025)
+    }
+    footer{padding:32px 0 45px;color:#7f8998;font-size:.86rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid var(--line);padding-top:25px}
+    .footer-links{display:flex;gap:20px}
+    .footer-links a:hover{color:#fff}
+    @media(max-width:800px){
+      .nav-links a:not(.nav-cta){display:none}
+      .hero{padding-top:125px}
+      .logos{gap:14px;padding:20px 15px}
+      .logo-card{height:70px}
+      .logo-card img{max-height:62px}
+      .grid,.split{grid-template-columns:1fr}
+      .split{gap:30px}
+      section{padding:70px 0}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:500px){
+      .container{width:min(var(--max),calc(100% - 28px))}
+      .hero{min-height:auto;padding-bottom:65px}
+      h1{font-size:3.25rem}
+      .logos{border-radius:18px}
+      .plus{font-size:1.3rem}
+      .logo-card img{max-width:95%}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="ColeBox and Hoberg collaboration home">ColeBox <span>×</span> Hoberg</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#collaboration">Collaboration</a>
+        <a href="#approach">What we're building</a>
+        <a class="nav-cta" href="https://hoberg.com.ng/" target="_blank" rel="noopener">Visit Hoberg</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow"><span class="dot"></span> Collaboration announcement · Coming soon</div>
+        <h1><span class="gradient">Finance, closer to where you already are.</span></h1>
+        <p class="hero-copy">
+          ColeBox and Hoberg are working together on a fintech experience designed around WhatsApp —
+          making everyday transactions feel simpler, more familiar and easier to access.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#collaboration">See the collaboration</a>
+          <a class="btn btn-secondary" href="https://hoberg.com.ng/" target="_blank" rel="noopener">Visit Hoberg Digital Agency ↗</a>
+        </div>
+
+        <div class="logos" aria-label="ColeBox and Hoberg logos">
+          <div class="logo-card"><img src="assets/colebox-logo.jpeg" alt="ColeBox logo"></div>
+          <div class="plus" aria-hidden="true">×</div>
+          <div class="logo-card"><img src="assets/hoberg-logo.png" alt="Hoberg Digital Agency logo"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collaboration">
+      <div class="container">
+        <div class="section-kicker">The collaboration</div>
+        <h2>Two teams. One simpler direction.</h2>
+        <p class="lead">
+          ColeBox brings the fintech product. Hoberg brings digital product, design and technology expertise.
+          Together, the goal is to create a smoother way for people to interact with financial services through a channel they already use every day.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="number">01 / COLEBOX</div>
+            <h3>Fintech, built around WhatsApp</h3>
+            <p>ColeBox is building a fintech experience that lets users carry out transactions through WhatsApp, reducing friction between intent and action.</p>
+          </article>
+          <article class="card">
+            <div class="number">02 / HOBERG</div>
+            <h3>Digital product & technology</h3>
+            <p>Hoberg Digital Agency works across digital experiences, web technology and product execution to turn ideas into useful, polished products.</p>
+          </article>
+          <article class="card">
+            <div class="number">03 / TOGETHER</div>
+            <h3>A more familiar experience</h3>
+            <p>The collaboration brings product and digital expertise together around one idea: make financial interactions feel less complicated.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="container split">
+        <div>
+          <div class="section-kicker">What we're building</div>
+          <h2>Transactions, without the extra friction.</h2>
+          <p class="lead">
+            The experience is being designed around WhatsApp so users can interact with the service in a familiar environment instead of learning an entirely new workflow.
+          </p>
+          <div class="quote">
+            <strong>Coming soon.</strong><br>
+            We're still putting the pieces together. More details about the ColeBox experience will be shared as the product gets closer to launch.
+          </div>
+          <div class="status"><i></i> Product collaboration in progress</div>
+        </div>
+        <div class="visual">
+          <img src="assets/colebox-hoberg-og.jpeg" alt="ColeBox and Hoberg collaboration visual">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <div class="section-kicker">Stay close</div>
+          <h2>Something useful is on the way.</h2>
+          <p class="lead" style="margin:0 auto 26px">
+            Follow the collaboration as ColeBox and Hoberg move from idea to product.
+          </p>
+          <a class="btn btn-primary" href="https://hoberg.com.ng/" target="_blank" rel="noopener">Explore Hoberg Digital Agency ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Hoberg Digital Agency. ColeBox × Hoberg collaboration.</div>
+      <div class="footer-links">
+        <a href="https://hoberg.com.ng/" target="_blank" rel="noopener">Hoberg</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    const year = document.getElementById('year');
+    year.textContent = new Date().getFullYear();
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+  </script>
+</body>
+</html>
