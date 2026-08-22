@@ -9,7 +9,7 @@ root sitemap.xml (don't replace the file, just add these entries):
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hoberg.com.ng/tools/tikdrop/</loc>
+    <loc>https://tikdrop.hoberg.com.ng/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
