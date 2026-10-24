@@ -1,5 +1,5 @@
 {
-  "lastBuildAt": "2026-10-24T13:21:47.785Z",
+  "lastBuildAt": "2026-10-24T13:45:19.124Z",
   "totalArticles": 8,
   "publishedCount": 8,
   "draftCount": 0,
@@ -208,6 +208,39 @@
       "notifiedHash": "932ff898b221fb5e",
       "lastVerifiedAt": "2026-10-24T13:21:47.785Z",
       "outstandingActions": []
+    },
+    "release-1792849519109": {
+      "slug": "release-1792849519109",
+      "title": "",
+      "contentType": "press-release",
+      "publicationStatus": "Draft / Excluded",
+      "publicUrl": "https://hoberg.com.ng/blog/release-1792849519109",
+      "publicUrlVerification": "Excluded (Non-Public)",
+      "sitemapInclusion": "Excluded",
+      "feedUpdate": "Excluded",
+      "metadataValidation": "Error",
+      "metadataIssues": [
+        "Headline is missing or under 10 characters.",
+        "Meta description / summary is under 40 characters."
+      ],
+      "structuredDataValidation": "Error",
+      "schemaType": "NewsArticle",
+      "schemaIssues": [
+        "Missing schema headline."
+      ],
+      "technicalCrawlability": "Excluded (Noindex/Draft)",
+      "crawlIssues": [
+        "Article status is \"draft\" (not publicly crawlable)."
+      ],
+      "searchEngineNotification": "Excluded",
+      "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
+      "bingIndexingStatus": "Excluded",
+      "lastVerifiedAt": "2026-10-24T13:45:19.124Z",
+      "outstandingActions": [
+        "Headline is missing or under 10 characters.",
+        "Meta description / summary is under 40 characters.",
+        "Missing schema headline."
+      ]
     }
   }
 }

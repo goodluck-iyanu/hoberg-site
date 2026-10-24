@@ -1,5 +1,60 @@
 [
   {
+    "id": "art-1792849487967",
+    "slug": "release-1792849519109",
+    "legacyPath": null,
+    "title": "",
+    "subtitle": "",
+    "summary": "",
+    "contentType": "press-release",
+    "schemaType": "NewsArticle",
+    "category": "Press & Announcements",
+    "tags": [
+      "Hoberg Digital",
+      "Lagos"
+    ],
+    "authorId": "goodluck-iyanu",
+    "issuingOrganization": "Hoberg Digital",
+    "dateline": "LAGOS, NIGERIA",
+    "datePublished": "2026-10-24T13:44:00.000Z",
+    "dateModified": "2026-10-24T13:45:19.110Z",
+    "scheduledFor": null,
+    "status": "draft",
+    "featured": false,
+    "readingTime": "1 min read",
+    "featuredImage": {
+      "url": "https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png",
+      "alt": "Hoberg Digital official logo",
+      "caption": "",
+      "credit": "Hoberg Digital",
+      "license": "Hoberg Digital Official Media"
+    },
+    "inlineImages": [],
+    "video": null,
+    "pressKitLinks": [],
+    "references": [],
+    "mediaContact": {
+      "name": "Goodluck Iyanu",
+      "role": "Founder & Owner, Hoberg Digital",
+      "organization": "Hoberg Digital",
+      "email": "hello@hoberg.com.ng",
+      "phone": "+234-810-428-9365",
+      "whatsapp": "https://wa.me/2348104289365",
+      "location": "Lagos, Nigeria"
+    },
+    "seo": {
+      "title": " | Hoberg Digital Newsroom",
+      "description": "",
+      "canonicalUrl": "https://hoberg.com.ng/blog/release-1792849519109",
+      "ogImage": "https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png",
+      "noindex": false
+    },
+    "bodyHtml": "<p class=\"intro-lede\"><strong>LAGOS, NIGERIA —</strong> Write the opening paragraph of your announcement or article here.</p>\n\n<h2 id=\"overview\">Key Details</h2>\n<p>Add supporting details, background context, and verifiable facts.</p>",
+    "ctaHtml": "",
+    "faqs": [],
+    "relatedSlugs": []
+  },
+  {
     "id": "art-press-2026-ai-report",
     "slug": "nigeria-2026-ai-search-visibility-report",
     "legacyPath": null,
