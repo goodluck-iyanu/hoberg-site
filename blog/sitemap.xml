@@ -5,9 +5,20 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/hoberg-next-1-0</loc>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1792851172516-hoberg-digital-announces-hoberg-next-1-0-marking-a-new-chapter-in-its-vision-for-digital-innovat.jpg</image:loc>
+      <image:title>Hoberg Digital Announces Hoberg Next 1.0, Marking a New Chapter in Its Vision for Digital Innovation</image:title>
+      <image:caption>Hoberg Digital official logo</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom</loc>

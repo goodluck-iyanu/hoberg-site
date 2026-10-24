@@ -4,75 +4,86 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://hoberg.com.ng/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/agency</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/services/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/services/digital-presence/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/services/digital-visibility/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/services/digital-growth/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/services/digital-systems/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/tools/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/tools/tikdrop/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/research/2026-ai-visibility-report/</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://hoberg.com.ng/colebox</loc>
-    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/hoberg-next-1-0</loc>
+    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1792851172516-hoberg-digital-announces-hoberg-next-1-0-marking-a-new-chapter-in-its-vision-for-digital-innovat.jpg</image:loc>
+      <image:title>Hoberg Digital Announces Hoberg Next 1.0, Marking a New Chapter in Its Vision for Digital Innovation</image:title>
+      <image:caption>Hoberg Digital official logo</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom</loc>
