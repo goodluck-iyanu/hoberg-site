@@ -13,8 +13,8 @@
   "indexNowKeyLocation": "https://hoberg.com.ng/4f8b92e1c7d34a6085e2b190f3c6d8a4.txt",
   "lastIndexNowResult": {
     "status": "Submitted",
-    "httpCode": 202,
-    "message": "IndexNow accepted 10 URL(s) (HTTP 202). Indexing is determined by participating search engines."
+    "httpCode": 200,
+    "message": "IndexNow accepted 2 URL(s) (HTTP 200). Indexing is determined by participating search engines."
   },
   "articles": {
     "hoberg-next1-0": {
