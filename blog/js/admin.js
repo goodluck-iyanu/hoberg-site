@@ -750,7 +750,7 @@
     );
   }
 
-  function openEditorWithArticle(article) {
+  function populateEditorFieldsOnly(article) {
     var isNew = !article;
     var a = article || {
       id: 'art-' + Date.now(),
@@ -797,18 +797,22 @@
       ctaHtml: ''
     };
 
-    $('editorHeading').textContent = isNew
-      ? 'Create Official Press Release / Article'
-      : 'Edit: ' + a.title;
+    var existsInPublished = state.articles.some(function (x) {
+      return x.id === a.id;
+    });
+    $('editorHeading').textContent =
+      isNew || !a.title
+        ? 'Create Official Press Release / Article'
+        : 'Edit: ' + a.title;
     $('editorCurrentStatusBadge').textContent = (a.status || 'draft').toUpperCase();
     $('editorCurrentStatusBadge').className = 'status-pill status-' + (a.status || 'draft');
 
     $('editArticleId').value = a.id;
-    $('editOriginalSlug').value = isNew ? '' : a.slug;
+    $('editOriginalSlug').value = existsInPublished ? a.slug : '';
     $('editTitle').value = a.title || '';
     $('editSubtitle').value = a.subtitle || '';
-    $('editSlug').value = a.slug || '';
-    $('slugPreviewSpan').textContent = a.slug || '...';
+    $('editSlug').value = a.slug && !/^release-\d+$/.test(a.slug) ? a.slug : '';
+    $('slugPreviewSpan').textContent = $('editSlug').value || '...';
     $('editDateline').value = a.dateline || '';
     $('editSummary').value = a.summary || '';
     $('editStatus').value = a.status || 'draft';
@@ -875,7 +879,10 @@
     (a.references || []).forEach(function (r) {
       addReferenceRepeaterRow(r.title, r.url, r.publisher);
     });
+  }
 
+  function openEditorWithArticle(article) {
+    populateEditorFieldsOnly(article);
     state.isDirty = false;
     switchAdminTab('editor');
   }
@@ -1944,23 +1951,41 @@
     } catch (e) {}
   }
 
-  function checkAutosaveBanner() {
+  function getSavedLocalFormDraft() {
     try {
       var raw = localStorage.getItem(AUTOSAVE_STORAGE_KEY);
-      if (!raw) {
-        $('autosaveRecoveryBanner').style.display = 'none';
-        return;
-      }
+      if (!raw) return null;
       var data = JSON.parse(raw);
-      if (data && data.article && data.article.title) {
-        $('autosaveRecoveryBanner').style.display = 'block';
-        $('autosaveRecoveryText').textContent =
-          '"' +
-          data.article.title +
-          '" — autosaved at ' +
-          new Date(data.savedAt).toLocaleString();
-      }
+      if (data && data.article) return data;
     } catch (e) {}
+    return null;
+  }
+
+  function checkAutosaveBanner() {
+    var data = getSavedLocalFormDraft();
+    if (!data) {
+      $('autosaveRecoveryBanner').style.display = 'none';
+      return;
+    }
+    var a = data.article;
+    var hasAnyContent =
+      Boolean(a.title && a.title.trim()) ||
+      Boolean(a.subtitle && a.subtitle.trim()) ||
+      Boolean(a.summary && a.summary.trim());
+    if (hasAnyContent) {
+      $('autosaveRecoveryBanner').style.display = 'block';
+      $('autosaveRecoveryText').textContent =
+        '"' +
+        (a.title || a.subtitle || 'Untitled Release in Progress') +
+        '" — autosaved at ' +
+        new Date(data.savedAt).toLocaleString();
+      // Also pre-populate the editor form in the background so switching to Release Editor shows it immediately
+      if (!$('editArticleId').value) {
+        populateEditorFieldsOnly(a);
+      }
+    } else {
+      $('autosaveRecoveryBanner').style.display = 'none';
+    }
   }
 
   function updateFeaturedPreview(url) {
@@ -2193,21 +2218,64 @@
       btn.addEventListener('click', function () {
         var t = btn.getAttribute('data-admin-tab');
         if (t === 'editor' && !$('editArticleId').value) {
-          openEditorWithArticle(null);
+          var saved = getSavedLocalFormDraft();
+          openEditorWithArticle(saved ? saved.article : null);
         } else {
           switchAdminTab(t);
         }
       });
     });
 
-    $('topNewArticleBtn').addEventListener('click', function () {
+    function startFreshOrResumeEditor() {
+      var saved = getSavedLocalFormDraft();
+      if (
+        saved &&
+        saved.article &&
+        (saved.article.title || saved.article.subtitle || saved.article.summary)
+      ) {
+        if (
+          !window.confirm(
+            'You have an unsaved release in progress ("' +
+              (saved.article.title || 'Untitled Release') +
+              '"). Start a blank form and discard the unsaved form?'
+          )
+        ) {
+          openEditorWithArticle(saved.article);
+          return;
+        }
+        try {
+          localStorage.removeItem(AUTOSAVE_STORAGE_KEY);
+        } catch (e) {}
+      }
       openEditorWithArticle(null);
-    });
-    $('dashNewArticleBtn').addEventListener('click', function () {
-      openEditorWithArticle(null);
-    });
+    }
+
+    $('topNewArticleBtn').addEventListener('click', startFreshOrResumeEditor);
+    $('dashNewArticleBtn').addEventListener('click', startFreshOrResumeEditor);
     $('logoutBtn').addEventListener('click', function () {
       lockOrSignOut(false);
+    });
+
+    // Save form state automatically on every input/change inside #articleEditorForm
+    // and whenever the user switches tabs, locks iPhone, or leaves the page
+    var editorFormEl = $('articleEditorForm');
+    if (editorFormEl) {
+      editorFormEl.addEventListener('input', function () {
+        markEditorDirty();
+      });
+      editorFormEl.addEventListener('change', function () {
+        markEditorDirty();
+      });
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'hidden' && $('editArticleId').value) {
+        markEditorDirty();
+      }
+    });
+    window.addEventListener('pagehide', function () {
+      if ($('editArticleId').value) {
+        markEditorDirty();
+      }
     });
 
     // Autosave recovery buttons
@@ -2468,9 +2536,62 @@
     $('stickySaveDraftBtn').addEventListener('click', async function () {
       try {
         $('editStatus').value = 'draft';
+        $('editorCurrentStatusBadge').textContent = 'DRAFT';
+        $('editorCurrentStatusBadge').className = 'status-pill status-draft';
+        markEditorDirty();
         var art = collectEditorArticleObject();
-        await executePublishingPipeline(art, 'save draft');
-        showToast('Saved draft "' + art.title + '"', 'success');
+        if (!art.title) {
+          state.isDirty = false;
+          showToast(
+            'Saved form progress on this device. It will stay here even if you leave the page.',
+            'success'
+          );
+          return;
+        }
+        var existingArt = state.articles.find(function (x) {
+          return x.id === art.id;
+        });
+        var wasPublished = existingArt && existingArt.status === 'published';
+        if (wasPublished) {
+          // If unpublishing a live article to draft, run full pipeline to remove it from public routes
+          await executePublishingPipeline(art, 'save draft');
+        } else {
+          // Private draft only: save in articles.json & local storage without touching public newsroom HTML/sitemaps
+          var idx = state.articles.findIndex(function (x) {
+            return x.id === art.id;
+          });
+          if (idx >= 0) state.articles[idx] = art;
+          else state.articles.unshift(art);
+
+          if (state.mode === 'server') {
+            await fetch('/api/blog/publish', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-Token': state.serverCsrfToken || ''
+              },
+              body: JSON.stringify({ article: art, operationLabel: 'save draft' })
+            });
+          } else if (state.mode === 'github') {
+            await commitFilesToGithubAtomic(
+              [
+                {
+                  path: 'blog/data/articles.json',
+                  content: JSON.stringify(state.articles, null, 2) + '\n',
+                  encoding: 'utf-8'
+                }
+              ],
+              'chore(newsroom): save private draft "' + art.title + '" [skip ci]'
+            );
+          }
+          state.isDirty = false;
+          renderDashboard();
+          renderStatusDashboard();
+        }
+        showToast(
+          'Saved draft "' + art.title + '" (private — live newsroom untouched)',
+          'success'
+        );
       } catch (err) {
         showToast(err.message, 'error');
       }
