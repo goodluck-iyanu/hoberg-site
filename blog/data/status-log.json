@@ -1,7 +1,7 @@
 {
-  "lastBuildAt": "2026-10-24T13:18:54.262Z",
-  "totalArticles": 8,
-  "publishedCount": 8,
+  "lastBuildAt": "2026-10-24T13:51:01.105Z",
+  "totalArticles": 9,
+  "publishedCount": 9,
   "draftCount": 0,
   "scheduledCount": 0,
   "archivedCount": 0,
@@ -17,6 +17,30 @@
     "message": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment."
   },
   "articles": {
+    "hoberg-digital-launches-official-newsroom": {
+      "slug": "hoberg-digital-launches-official-newsroom",
+      "title": "Hoberg Digital Launches Official Newsroom and Product Showroom at hoberg.com.ng/blog",
+      "contentType": "press-release",
+      "publicationStatus": "Complete",
+      "publicUrl": "https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom",
+      "publicUrlVerification": "Complete",
+      "sitemapInclusion": "Complete",
+      "feedUpdate": "Complete",
+      "metadataValidation": "Complete",
+      "metadataIssues": [],
+      "structuredDataValidation": "Complete",
+      "schemaType": "NewsArticle",
+      "schemaIssues": [],
+      "technicalCrawlability": "Complete",
+      "crawlIssues": [],
+      "searchEngineNotification": "Pending",
+      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
+      "bingIndexingStatus": "Pending Retry (Sitemap Active)",
+      "notifiedHash": null,
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "outstandingActions": []
+    },
     "nigeria-2026-ai-search-visibility-report": {
       "slug": "nigeria-2026-ai-search-visibility-report",
       "title": "Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies",
@@ -38,7 +62,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "tikdrop-and-hoberg-web-tools-release": {
@@ -62,7 +86,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "hoberg-digital-brand-and-ecosystem": {
@@ -86,7 +110,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "best-website-design-company-nigeria": {
@@ -110,7 +134,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "website-design-company-lagos": {
@@ -134,7 +158,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "website-design-cost-nigeria": {
@@ -158,7 +182,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "ecommerce-website-development": {
@@ -182,7 +206,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     },
     "corporate-website-design": {
@@ -206,7 +230,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:18:54.262Z",
+      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
       "outstandingActions": []
     }
   }

@@ -5,11 +5,23 @@
   <link href="https://hoberg.com.ng/blog/atom.xml" rel="self" type="application/atom+xml" />
   <link href="https://hoberg.com.ng/blog" rel="alternate" type="text/html" />
   <id>https://hoberg.com.ng/blog/</id>
-  <updated>2026-10-24T11:00:00.000Z</updated>
+  <updated>2026-10-24T13:45:00.000Z</updated>
   <author>
     <name>Hoberg Digital</name>
     <uri>https://hoberg.com.ng/</uri>
   </author>
+  <entry>
+    <title>Hoberg Digital Launches Official Newsroom and Product Showroom at hoberg.com.ng/blog</title>
+    <link href="https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom" rel="alternate" type="text/html" />
+    <id>https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom</id>
+    <published>2026-10-24T13:45:00.000Z</published>
+    <updated>2026-10-24T13:45:00.000Z</updated>
+    <author>
+      <name>Goodluck Iyanu</name>
+    </author>
+    <category term="Company Announcements &amp; Press" />
+    <summary>Hoberg Digital officially launches its digital newsroom and product showroom at hoberg.com.ng/blog, providing journalists, clients, partners, and search platforms with verified announcements, product updates, and original research from Lagos, Nigeria.</summary>
+  </entry>
   <entry>
     <title>Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies</title>
     <link href="https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report" rel="alternate" type="text/html" />

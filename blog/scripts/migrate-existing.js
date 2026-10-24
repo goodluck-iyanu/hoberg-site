@@ -1046,3 +1046,4 @@ if (!fs.existsSync(path.join(DATA_DIR, 'revisions.json'))) {
 }
 
 console.log(`Successfully migrated ${articles.length} articles, ${mediaRegistry.length} media assets, and ${redirects.length} canonical redirects.`);
+

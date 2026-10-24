@@ -5,9 +5,32 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom</loc>
+    <lastmod>2026-10-24T13:45:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/images/lagos-street.jpg</image:loc>
+      <image:title>Hoberg Digital Launches Official Newsroom and Product Showroom at hoberg.com.ng/blog</image:title>
+      <image:caption>Hoberg Digital launches its official newsroom and digital product showroom in Lagos, Nigeria.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/images/lekki-bridge.jpg</image:loc>
+      <image:title>Lekki-Ikoyi Link Bridge in Lagos, Nigeria</image:title>
+      <image:caption>From Lagos, Hoberg Digital builds practical products, utilities, and agency platforms for Nigerian businesses and consumers.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://hoberg.com.ng/images/lagos-lagoon-poster.jpg</video:thumbnail_loc>
+      <video:title>Hoberg Digital — Lagos Digital Ecosystem</video:title>
+      <video:description>Aerial view of Lagos, Nigeria, home to Hoberg Digital&apos;s product and agency ecosystem.</video:description>
+      <video:content_loc>https://hoberg.com.ng/videos/lagoon-hero.mp4</video:content_loc>
+      <video:publication_date>2026-10-24T13:45:00.000Z</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report</loc>

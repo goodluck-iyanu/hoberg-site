@@ -1,5 +1,129 @@
 [
   {
+    "id": "art-press-hoberg-newsroom-launch",
+    "slug": "hoberg-digital-launches-official-newsroom",
+    "legacyPath": null,
+    "title": "Hoberg Digital Launches Official Newsroom and Product Showroom at hoberg.com.ng/blog",
+    "subtitle": "A centralized publishing platform for official press releases, product launches, original research, and digital ecosystem updates from Hoberg Digital in Lagos, Nigeria.",
+    "summary": "Hoberg Digital officially launches its digital newsroom and product showroom at hoberg.com.ng/blog, providing journalists, clients, partners, and search platforms with verified announcements, product updates, and original research from Lagos, Nigeria.",
+    "contentType": "press-release",
+    "schemaType": "NewsArticle",
+    "category": "Company Announcements & Press",
+    "tags": [
+      "Hoberg Digital",
+      "Press Release",
+      "Newsroom",
+      "Product Showroom",
+      "Goodluck Iyanu",
+      "Lagos",
+      "Nigeria"
+    ],
+    "authorId": "goodluck-iyanu",
+    "issuingOrganization": "Hoberg Digital",
+    "dateline": "LAGOS, NIGERIA",
+    "datePublished": "2026-10-24T14:45:00+01:00",
+    "dateModified": "2026-10-24T14:45:00+01:00",
+    "status": "published",
+    "featured": true,
+    "readingTime": "5 min read",
+    "featuredImage": {
+      "url": "https://hoberg.com.ng/images/lagos-street.jpg",
+      "alt": "Lagos commercial hub representing the launch of Hoberg Digital's Official Newsroom and Product Showroom",
+      "caption": "Hoberg Digital launches its official newsroom and digital product showroom in Lagos, Nigeria.",
+      "credit": "Hoberg Digital",
+      "sourceUrl": "https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom",
+      "license": "Hoberg Digital Official Media"
+    },
+    "inlineImages": [
+      {
+        "url": "https://hoberg.com.ng/images/lekki-bridge.jpg",
+        "alt": "Lekki-Ikoyi Link Bridge in Lagos, Nigeria",
+        "caption": "From Lagos, Hoberg Digital builds practical products, utilities, and agency platforms for Nigerian businesses and consumers.",
+        "credit": "Hoberg Digital"
+      }
+    ],
+    "video": {
+      "type": "direct",
+      "url": "https://hoberg.com.ng/videos/lagoon-hero.mp4",
+      "poster": "https://hoberg.com.ng/images/lagos-lagoon-poster.jpg",
+      "title": "Hoberg Digital — Lagos Digital Ecosystem",
+      "description": "Aerial view of Lagos, Nigeria, home to Hoberg Digital's product and agency ecosystem.",
+      "transcript": "Aerial visual footage of the Lagos lagoon and urban skyline in Lagos, Nigeria, representing Hoberg Digital's headquarters and engineering operations."
+    },
+    "pressKitLinks": [
+      {
+        "label": "Hoberg Digital Main Platform & Product Showroom",
+        "url": "https://hoberg.com.ng/",
+        "fileType": "Official Website"
+      },
+      {
+        "label": "Hoberg 2026 Nigerian Business AI Visibility Report",
+        "url": "https://hoberg.com.ng/research/2026-ai-visibility-report/",
+        "fileType": "Research Report"
+      },
+      {
+        "label": "Hoberg Digital Machine-Readable Entity Profile (llms.txt)",
+        "url": "https://hoberg.com.ng/llms.txt",
+        "fileType": "Text / Schema"
+      }
+    ],
+    "references": [
+      {
+        "title": "Hoberg Digital Official Website",
+        "url": "https://hoberg.com.ng/",
+        "publisher": "Hoberg Digital"
+      },
+      {
+        "title": "Hoberg Digital Agency",
+        "url": "https://hoberg.com.ng/agency",
+        "publisher": "Hoberg Digital"
+      },
+      {
+        "title": "Hoberg Web Tools Suite (TikDrop, FileDrop, IMGDrop, BGDrop)",
+        "url": "https://hoberg.com.ng/tools/",
+        "publisher": "Hoberg Digital"
+      }
+    ],
+    "mediaContact": {
+      "name": "Goodluck Iyanu",
+      "role": "Founder & Owner, Hoberg Digital",
+      "organization": "Hoberg Digital",
+      "email": "hello@hoberg.com.ng",
+      "phone": "+234-810-428-9365",
+      "whatsapp": "https://wa.me/2348104289365",
+      "location": "Lagos, Nigeria"
+    },
+    "seo": {
+      "title": "Hoberg Digital Launches Official Newsroom & Product Showroom | Hoberg Digital",
+      "description": "Official press release: Hoberg Digital launches its Newsroom and Product Showroom at hoberg.com.ng/blog for company announcements, product launches, and original research.",
+      "canonicalUrl": "https://hoberg.com.ng/blog/hoberg-digital-launches-official-newsroom",
+      "ogImage": "https://hoberg.com.ng/images/lagos-street.jpg",
+      "noindex": false
+    },
+    "bodyHtml": "<p class=\"intro-lede\"><strong>LAGOS, NIGERIA —</strong> <a href=\"https://hoberg.com.ng/\">Hoberg Digital</a>, the Lagos-based technology and digital product company founded and owned by Goodluck Iyanu, today announced the official launch of the <strong>Hoberg Digital Newsroom and Product Showroom</strong> at <a href=\"https://hoberg.com.ng/blog\">hoberg.com.ng/blog</a>.</p>\n\n<h2 id=\"official-source-of-record\">An Official Source of Record for Hoberg Digital</h2>\n<p>Built directly inside the main Hoberg Digital platform, the new newsroom serves as the permanent public archive and digital showroom for Hoberg's products, agency capabilities, research publications, partnerships, and corporate milestones.</p>\n<p>Every announcement published in the Hoberg Digital Newsroom is issued at a permanent canonical URL under <code>https://hoberg.com.ng/blog/[slug]</code> with structured Schema.org metadata, verified publication timestamps, downloadable press resources, and syndication feeds (`RSS 2.0`, `Atom 1.0`, `JSON Feed`, and `llms.txt`).</p>\n\n<figure class=\"article-figure\">\n  <img src=\"https://hoberg.com.ng/images/lekki-bridge.jpg\" alt=\"Lekki-Ikoyi Link Bridge in Lagos, Nigeria\" loading=\"lazy\" width=\"1200\" height=\"675\">\n  <figcaption>From Lagos, Hoberg Digital builds practical products, utilities, and agency platforms for Nigerian businesses and consumers. <span class=\"credit\">Credit: Hoberg Digital</span></figcaption>\n</figure>\n\n<h2 id=\"what-the-newsroom-and-showroom-covers\">What the Hoberg Newsroom &amp; Showroom Covers</h2>\n<p>Visitors, clients, journalists, and researchers can browse and filter official releases across Hoberg Digital's core verticals:</p>\n<div class=\"checklist\">\n  <ul>\n    <li><strong>Official Press Releases &amp; Company Statements:</strong> Verified corporate updates, leadership communications, and business milestones from Hoberg Digital in Lagos.</li>\n    <li><strong>Product Launches &amp; Platform Showroom:</strong> Releases and feature updates across <a href=\"https://hoberg.com.ng/tools/\">Hoberg Tools</a> (TikDrop, FileDrop, IMGDrop, BGDrop), <a href=\"https://jobs.hoberg.com.ng/\">Hoberg Jobs</a>, <a href=\"https://edu.hoberg.com.ng/\">Hoberg Edu</a>, <a href=\"https://hoberg.com.ng/colebox\">Colebox</a>, <a href=\"https://maji.hoberg.com.ng/\">Maji by Hoberg</a>, <a href=\"https://healthnehome.hoberg.com.ng/\">Healthnehome</a>, and sister company <a href=\"https://ficqs.hoberg.com/\">FICQS</a>.</li>\n    <li><strong>Original Research &amp; Benchmark Reports:</strong> Data-backed studies including the <a href=\"https://hoberg.com.ng/research/2026-ai-visibility-report/\">2026 Nigerian Business AI Visibility Report</a> auditing 50 leading Nigerian companies.</li>\n    <li><strong>Web Engineering &amp; Digital Visibility Guides:</strong> Practical technical guides from <a href=\"https://hoberg.com.ng/agency\">Hoberg Digital Agency</a> and <a href=\"https://hoberg.com.ng/services/digital-visibility/\">Hoberg Digital Visibility Services</a> covering website architecture, e-commerce engineering, and search readiness in Nigeria.</li>\n  </ul>\n</div>\n\n<h2 id=\"designed-for-open-web-and-ai-discovery\">Engineered for Open-Web Syndication and Technical Clarity</h2>\n<p>To ensure that every announcement is immediately accessible to readers, journalists, search engines, and AI research assistants, the Hoberg Digital Newsroom automatically maintains:</p>\n<ul>\n  <li><strong>XML Sitemaps:</strong> <a href=\"https://hoberg.com.ng/sitemap.xml\">hoberg.com.ng/sitemap.xml</a> and <a href=\"https://hoberg.com.ng/blog/sitemap.xml\">hoberg.com.ng/blog/sitemap.xml</a> with image and video metadata extensions.</li>\n  <li><strong>Syndication Feeds:</strong> <a href=\"https://hoberg.com.ng/blog/feed.xml\">RSS 2.0 Feed</a>, <a href=\"https://hoberg.com.ng/blog/atom.xml\">Atom 1.0 Feed</a>, and <a href=\"https://hoberg.com.ng/blog/feed.json\">JSON Feed 1.1</a>.</li>\n  <li><strong>AI &amp; Entity Factsheets:</strong> <a href=\"https://hoberg.com.ng/llms.txt\">hoberg.com.ng/llms.txt</a> and <a href=\"https://hoberg.com.ng/blog/llms.txt\">hoberg.com.ng/blog/llms.txt</a> for transparent machine-readable indexing.</li>\n</ul>\n\n<div class=\"pull-note\">\n  <strong>Explore the Hoberg Ecosystem:</strong> Visit the <a href=\"https://hoberg.com.ng/blog\">Hoberg Digital Newsroom</a> to read all current releases, or explore <a href=\"https://hoberg.com.ng/agency\">Hoberg Digital Agency</a> to partner with our engineering and visibility team in Lagos.\n</div>",
+    "ctaHtml": "<p>Have a press inquiry, partnership proposal, or web engineering project in Nigeria? Contact Hoberg Digital directly via email or WhatsApp.</p>",
+    "faqs": [
+      {
+        "question": "Where is the official Hoberg Digital Newsroom located?",
+        "answer": "The official Hoberg Digital Newsroom and Product Showroom is permanently hosted at https://hoberg.com.ng/blog."
+      },
+      {
+        "question": "How can journalists or readers subscribe to Hoberg Digital announcements?",
+        "answer": "Readers and news aggregators can subscribe via RSS 2.0 at https://hoberg.com.ng/blog/feed.xml, Atom 1.0 at https://hoberg.com.ng/blog/atom.xml, or JSON Feed at https://hoberg.com.ng/blog/feed.json."
+      },
+      {
+        "question": "Who owns and operates Hoberg Digital?",
+        "answer": "Hoberg Digital is founded and owned by Goodluck Iyanu and is headquartered in Lagos, Nigeria."
+      }
+    ],
+    "relatedSlugs": [
+      "hoberg-digital-brand-and-ecosystem",
+      "nigeria-2026-ai-search-visibility-report",
+      "tikdrop-and-hoberg-web-tools-release",
+      "best-website-design-company-nigeria"
+    ]
+  },
+  {
     "id": "art-press-2026-ai-report",
     "slug": "nigeria-2026-ai-search-visibility-report",
     "legacyPath": null,
