@@ -1,5 +1,5 @@
 {
-  "lastBuildAt": "2026-10-24T13:51:01.105Z",
+  "lastBuildAt": "2026-10-24T13:54:25.447Z",
   "totalArticles": 9,
   "publishedCount": 9,
   "draftCount": 0,
@@ -12,9 +12,9 @@
   "jsonFeedUrl": "https://hoberg.com.ng/blog/feed.json",
   "indexNowKeyLocation": "https://hoberg.com.ng/4f8b92e1c7d34a6085e2b190f3c6d8a4.txt",
   "lastIndexNowResult": {
-    "status": "Pending",
-    "httpCode": null,
-    "message": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment."
+    "status": "Submitted",
+    "httpCode": 202,
+    "message": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines."
   },
   "articles": {
     "hoberg-digital-launches-official-newsroom": {
@@ -38,7 +38,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "nigeria-2026-ai-search-visibility-report": {
@@ -57,12 +57,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "tikdrop-and-hoberg-web-tools-release": {
@@ -81,12 +81,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "hoberg-digital-brand-and-ecosystem": {
@@ -105,12 +105,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "best-website-design-company-nigeria": {
@@ -129,12 +129,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "website-design-company-lagos": {
@@ -153,12 +153,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "website-design-cost-nigeria": {
@@ -177,12 +177,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "ecommerce-website-development": {
@@ -201,12 +201,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     },
     "corporate-website-design": {
@@ -225,12 +225,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Pending",
-      "notificationDetail": "Network unavailable for live IndexNow ping (ENOTFOUND); queued for retry on deployment.",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 9 URL(s) (HTTP 202). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Pending Retry (Sitemap Active)",
       "notifiedHash": null,
-      "lastVerifiedAt": "2026-10-24T13:51:01.105Z",
+      "lastVerifiedAt": "2026-10-24T13:54:25.447Z",
       "outstandingActions": []
     }
   }
