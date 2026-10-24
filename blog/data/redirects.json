@@ -1,0 +1,37 @@
+[
+  {
+    "from": "/blog/articles/best-website-design-company-nigeria.html",
+    "to": "/blog/best-website-design-company-nigeria",
+    "type": 301,
+    "reason": "Migrated legacy /blog/articles/*.html path to clean canonical /blog/[slug] URL while preserving legacy file.",
+    "createdAt": "2026-10-24T13:45:00+01:00"
+  },
+  {
+    "from": "/blog/articles/website-design-company-lagos.html",
+    "to": "/blog/website-design-company-lagos",
+    "type": 301,
+    "reason": "Migrated legacy /blog/articles/*.html path to clean canonical /blog/[slug] URL while preserving legacy file.",
+    "createdAt": "2026-10-24T13:45:00+01:00"
+  },
+  {
+    "from": "/blog/articles/website-design-cost-nigeria.html",
+    "to": "/blog/website-design-cost-nigeria",
+    "type": 301,
+    "reason": "Migrated legacy /blog/articles/*.html path to clean canonical /blog/[slug] URL while preserving legacy file.",
+    "createdAt": "2026-10-24T13:45:00+01:00"
+  },
+  {
+    "from": "/blog/articles/ecommerce-website-development.html",
+    "to": "/blog/ecommerce-website-development",
+    "type": 301,
+    "reason": "Migrated legacy /blog/articles/*.html path to clean canonical /blog/[slug] URL while preserving legacy file.",
+    "createdAt": "2026-10-24T13:45:00+01:00"
+  },
+  {
+    "from": "/blog/articles/corporate-website-design.html",
+    "to": "/blog/corporate-website-design",
+    "type": 301,
+    "reason": "Migrated legacy /blog/articles/*.html path to clean canonical /blog/[slug] URL while preserving legacy file.",
+    "createdAt": "2026-10-24T13:45:00+01:00"
+  }
+]

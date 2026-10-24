@@ -1,12 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://hoberg.com.ng/</loc></url>
-<url><loc>https://hoberg.com.ng/services/</loc></url>
-<url><loc>https://hoberg.com.ng/pricing/</loc></url>
-<url><loc>https://hoberg.com.ng/work/</loc></url>
-<url><loc>https://hoberg.com.ng/blog/</loc></url>
-<url><loc>https://hoberg.com.ng/tools/</loc></url>
-<url><loc>https://hoberg.com.ng/research/</loc></url>
-<url><loc>https://hoberg.com.ng/book/</loc></url>
-<url><loc>https://hoberg.com.ng/contact/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://hoberg.com.ng/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/agency</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/services/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/services/digital-presence/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/services/digital-visibility/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/services/digital-growth/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/services/digital-systems/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/tools/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/tools/tikdrop/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/research/2026-ai-visibility-report/</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/colebox</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/images/lagos-lagoon-poster.jpg</image:loc>
+      <image:title>Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies</image:title>
+      <image:caption>Hoberg Digital&apos;s 2026 AI Visibility Report evaluates technical discoverability across 50 major Nigerian companies.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/images/lekki-bridge.jpg</image:loc>
+      <image:title>Lekki-Ikoyi Link Bridge in Lagos, Nigeria</image:title>
+      <image:caption>Lagos commercial corridor: where corporate credibility increasingly depends on structured digital and AI search signals.</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://hoberg.com.ng/images/lagos-lagoon-poster.jpg</video:thumbnail_loc>
+      <video:title>Lagos Digital Ecosystem Overview — Hoberg Digital</video:title>
+      <video:description>Visual overview of Lagos, Nigeria, home to Hoberg Digital&apos;s research and engineering desk.</video:description>
+      <video:content_loc>https://hoberg.com.ng/videos/lagoon-hero.mp4</video:content_loc>
+      <video:publication_date>2026-09-15T08:00:00.000Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/tools/assets/og-image.png</image:loc>
+      <image:title>Hoberg Digital Expands Free Web Utilities Suite in Lagos: TikDrop, FileDrop, IMGDrop, and BGDrop</image:title>
+      <image:caption>The Hoberg Tools hub at hoberg.com.ng/tools provides free web utilities engineered in Lagos.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png</image:loc>
+      <image:title>Meet the Hoberg Digital Brand &amp; Group Architecture: Agency, Jobs, Edu, Tools, Research, and Ventures</image:title>
+      <image:caption>The official Hoberg Digital Agency mark combines a bold crimson symbol, crisp white typography, and a refined gold wordmark.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/corporate-website-design</loc>
+    <lastmod>2026-08-01T17:25:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/corporate-website-design.jpg</image:loc>
+      <image:title>Corporate Website Design: Building a Site That Signals Trust</image:title>
+      <image:caption>Corporate website architecture focuses on due-diligence clarity, leadership transparency, and fast mobile navigation.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/ecommerce-website-development</loc>
+    <lastmod>2026-08-01T17:20:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/ecommerce-website-development.jpg</image:loc>
+      <image:title>E-commerce Website Development in Nigeria: What Your Store Actually Needs</image:title>
+      <image:caption>Building an online store in Nigeria requires reliable local payment gateways, clear delivery pricing, and fast mobile checkout.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/website-design-cost-nigeria</loc>
+    <lastmod>2026-08-01T17:15:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/website-design-cost-nigeria.jpg</image:loc>
+      <image:title>Website Design Cost in Nigeria: A Realistic Breakdown</image:title>
+      <image:caption>Understanding how scope, custom design, functionality, and post-launch support determine website pricing in Nigeria.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/website-design-company-lagos</loc>
+    <lastmod>2026-08-23T19:38:54.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/website-design-company-lagos.jpg</image:loc>
+      <image:title>Website Design Company in Lagos: What to Look For Before You Hire</image:title>
+      <image:caption>Hiring a Lagos-based website design team brings local market context, same-timezone responsiveness, and practical payment knowledge.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/best-website-design-company-nigeria</loc>
+    <lastmod>2026-10-24T11:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/assets/best-website-design-company-nigeria.jpg</image:loc>
+      <image:title>Best Website Design Company in Nigeria: How to Choose in 2026</image:title>
+      <image:caption>How Nigerian business owners evaluate portfolio quality, mobile performance, and milestone accountability before hiring a web agency.</image:caption>
+    </image:image>
+  </url>
 </urlset>

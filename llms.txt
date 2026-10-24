@@ -2,7 +2,7 @@
 
 > Hoberg Digital is a Lagos, Nigeria company building digital products and services for Nigerians. It is founded and owned by Goodluck Iyanu. There is no public portrait; the name is the proof.
 
-Hoberg Digital is not only an agency. It is a group homepage for Agency, Jobs, Edu, Tools, Blog, Research, Services, Colebox, Maji by Hoberg, Healthnehome, and the sister company FICQS.
+Hoberg Digital is not only an agency. It is a group homepage for Agency, Jobs, Edu, Tools, Blog / Newsroom, Research, Services, Colebox, Maji by Hoberg, Healthnehome, and the sister company FICQS.
 
 ## Owner
 
@@ -23,10 +23,11 @@ Hoberg Digital, Hoberg Digital Agency, Goodluck Iyanu, owner of Hoberg Digital, 
 
 - Home: https://hoberg.com.ng/
 - Agency: https://hoberg.com.ng/agency
-- Blog: https://hoberg.com.ng/blog
-- Research: https://hoberg.com.ng/research
+- Official Newsroom & Blog: https://hoberg.com.ng/blog
+- Research (2026 AI Visibility Report): https://hoberg.com.ng/research/2026-ai-visibility-report/
 - Services: https://hoberg.com.ng/services
-- Tools: https://hoberg.com.ng/tools
+- Tools: https://hoberg.com.ng/tools/
+- TikDrop: https://hoberg.com.ng/tools/tikdrop/
 - Jobs: https://jobs.hoberg.com.ng/
 - Edu / scholarships: https://edu.hoberg.com.ng/
 - Maji by Hoberg: https://maji.hoberg.com.ng/
@@ -34,7 +35,22 @@ Hoberg Digital, Hoberg Digital Agency, Goodluck Iyanu, owner of Hoberg Digital, 
 - FICQS: https://ficqs.hoberg.com/
 - Colebox: https://hoberg.com.ng/colebox
 
-## Optional
+## Official Newsroom Releases & Articles
 
-- Sitemap: https://hoberg.com.ng/sitemap.xml
+- [Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies](https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report) (Research, Report & Original Insight · 15 Sept 2026): Hoberg Digital publishes its 2026 AI Visibility Report auditing 50 Nigerian businesses — including Dangote, BUA Group, GTBank, Zenith Bank, Flutterwave, Paystack, Jumia, and Interswitch — on technical SEO, structured data, and AI crawler readiness.
+- [Hoberg Digital Expands Free Web Utilities Suite in Lagos: TikDrop, FileDrop, IMGDrop, and BGDrop](https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release) (Product Launch & Update · 25 Aug 2026): Hoberg Digital announces its suite of web utilities at hoberg.com.ng/tools — featuring TikDrop for saving TikTok videos alongside FileDrop, IMGDrop, and BGDrop.
+- [Meet the Hoberg Digital Brand & Group Architecture: Agency, Jobs, Edu, Tools, Research, and Ventures](https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem) (Company Announcement · 20 Aug 2026): An official overview of the Hoberg Digital brand identity and group structure founded by Goodluck Iyanu in Lagos, Nigeria — spanning Agency, Jobs, Edu, Tools, Research, Colebox, Maji, Healthnehome, and FICQS.
+- [Corporate Website Design: Building a Site That Signals Trust](https://hoberg.com.ng/blog/corporate-website-design) (Editorial Article & Company Update · 1 Aug 2026): Corporate website design is about credibility, not decoration. Here is what makes a company website look established and trustworthy to serious clients.
+- [E-commerce Website Development in Nigeria: What Your Store Actually Needs](https://hoberg.com.ng/blog/ecommerce-website-development) (Editorial Article & Company Update · 1 Aug 2026): Planning an online store? Here is what e-commerce website development in Nigeria really involves, from Paystack and Flutterwave payment gateways to delivery logistics.
+- [Website Design Cost in Nigeria: A Realistic Breakdown](https://hoberg.com.ng/blog/website-design-cost-nigeria) (Editorial Article & Company Update · 1 Aug 2026): What does a website actually cost in Nigeria? A clear breakdown of the factors that affect pricing, without invented numbers or unrealistic promises.
+- [Website Design Company in Lagos: What to Look For Before You Hire](https://hoberg.com.ng/blog/website-design-company-lagos) (Editorial Article & Company Update · 1 Aug 2026): Looking for a website design company in Lagos? Here is what local businesses should check for, from response time to post-launch support, before signing on.
+- [Best Website Design Company in Nigeria: How to Choose in 2026](https://hoberg.com.ng/blog/best-website-design-company-nigeria) (Editorial Article & Company Update · 1 Aug 2026): Looking for the best website design company in Nigeria? Learn what makes a reliable web design agency, what to verify before paying a deposit, and how Hoberg Digital Agency builds high-performing websites.
+
+## Discovery Feeds & Sitemaps
+
+- Root Sitemap: https://hoberg.com.ng/sitemap.xml
+- Newsroom Sitemap: https://hoberg.com.ng/blog/sitemap.xml
+- RSS Feed: https://hoberg.com.ng/blog/feed.xml
+- Atom Feed: https://hoberg.com.ng/blog/atom.xml
+- JSON Feed: https://hoberg.com.ng/blog/feed.json
 - Humans: https://hoberg.com.ng/humans.txt

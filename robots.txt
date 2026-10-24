@@ -1,24 +1,33 @@
 # Hoberg Digital — https://hoberg.com.ng/
 # Founded and owned by Goodluck Iyanu. Lagos, Nigeria.
 # Full facts for crawlers and models: https://hoberg.com.ng/llms.txt
+# Official Newsroom: https://hoberg.com.ng/blog
 
 User-agent: *
 Allow: /
+Disallow: /blog/admin
+Disallow: /api/blog/
 
 User-agent: Googlebot
 Allow: /
+Disallow: /blog/admin
 
 User-agent: Googlebot-Image
 Allow: /
+
+User-agent: Googlebot-News
+Allow: /blog
 
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /blog/admin
 
 User-agent: GPTBot
 Allow: /
+Disallow: /blog/admin
 
 User-agent: ChatGPT-User
 Allow: /
@@ -44,9 +53,6 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: Bytespider
-Allow: /
-
 User-agent: Amazonbot
 Allow: /
 
@@ -54,3 +60,4 @@ User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://hoberg.com.ng/sitemap.xml
+Sitemap: https://hoberg.com.ng/blog/sitemap.xml

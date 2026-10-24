@@ -1,0 +1,53 @@
+name: Hoberg Digital Newsroom — Automated Publishing & IndexNow Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'blog/data/**'
+      - 'blog/scripts/**'
+      - 'blog/js/newsroom-engine.js'
+  schedule:
+    # Runs every 6 hours to automatically publish scheduled articles whose scheduledFor timestamp has arrived
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      notify_indexnow:
+        description: 'Submit changed/published URLs to IndexNow'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+jobs:
+  publish-and-verify:
+    name: Build Static Routes, Sitemaps, Feeds & Notify Search Engines
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Hoberg Digital Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run Automated Newsroom Publishing Pipeline
+        run: |
+          node blog/scripts/build-newsroom.js --notify-indexnow
+
+      - name: Commit & Push Updated Discovery Artifacts (If Any Changed)
+        run: |
+          git config user.name "Hoberg Newsroom Bot"
+          git config user.email "hello@hoberg.com.ng"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(newsroom): automated build pipeline, sitemaps, feeds & IndexNow sync [skip ci]"
+            git push origin main
+          else
+            echo "All static routes, sitemaps, feeds, and status logs are already synchronized."
+          fi

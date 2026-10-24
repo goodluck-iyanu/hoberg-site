@@ -1,0 +1,30 @@
+[
+  {
+    "id": "hoberg-digital",
+    "name": "Hoberg Digital",
+    "type": "Organization",
+    "role": "Official Newsroom & Issuing Organization",
+    "url": "https://hoberg.com.ng/",
+    "avatarText": "HD",
+    "bio": "Hoberg Digital is a Lagos, Nigeria company building digital products and services for Nigerians — including Hoberg Digital Agency, Hoberg Jobs, Hoberg Edu, Hoberg Tools, Research, Colebox, Maji by Hoberg, and Healthnehome."
+  },
+  {
+    "id": "hoberg-digital-agency",
+    "name": "Hoberg Digital Agency",
+    "type": "Organization",
+    "role": "Digital Agency Desk",
+    "url": "https://hoberg.com.ng/agency",
+    "avatarText": "H",
+    "bio": "Lagos-based digital agency building websites, apps, SEO, AI search visibility, content and ads for Nigerian businesses."
+  },
+  {
+    "id": "goodluck-iyanu",
+    "name": "Goodluck Iyanu",
+    "type": "Person",
+    "role": "Founder & Owner, Hoberg Digital",
+    "url": "https://www.linkedin.com/in/goodluck-iyanu-54b63b434",
+    "avatarText": "GI",
+    "bio": "Founder and owner of Hoberg Digital in Lagos, Nigeria."
+  }
+]
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hoberg Digital Newsroom</title>
+    <link>https://hoberg.com.ng/blog</link>
+    <description>Official press releases, company announcements, AI visibility research, product launches, and guides from Hoberg Digital in Lagos, Nigeria.</description>
+    <language>en-ng</language>
+    <lastBuildDate>Sat, 24 Oct 2026 11:00:00 GMT</lastBuildDate>
+    <atom:link href="https://hoberg.com.ng/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies</title>
+      <link>https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report</guid>
+      <pubDate>Tue, 15 Sep 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Goodluck Iyanu</dc:creator>
+      <category>Research &amp; AI Visibility</category>
+      <category>Research, Report &amp; Original Insight</category>
+      <description>Hoberg Digital publishes its 2026 AI Visibility Report auditing 50 Nigerian businesses — including Dangote, BUA Group, GTBank, Zenith Bank, Flutterwave, Paystack, Jumia, and Interswitch — on technical SEO, structured data, and AI crawler readiness.</description>
+      <enclosure url="https://hoberg.com.ng/images/lagos-lagoon-poster.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Hoberg Digital Expands Free Web Utilities Suite in Lagos: TikDrop, FileDrop, IMGDrop, and BGDrop</title>
+      <link>https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital</dc:creator>
+      <category>Digital Products &amp; Tools</category>
+      <category>Product Launch &amp; Update</category>
+      <description>Hoberg Digital announces its suite of web utilities at hoberg.com.ng/tools — featuring TikDrop for saving TikTok videos alongside FileDrop, IMGDrop, and BGDrop.</description>
+      <enclosure url="https://hoberg.com.ng/tools/assets/og-image.png" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Meet the Hoberg Digital Brand &amp; Group Architecture: Agency, Jobs, Edu, Tools, Research, and Ventures</title>
+      <link>https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem</guid>
+      <pubDate>Thu, 20 Aug 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Goodluck Iyanu</dc:creator>
+      <category>Press &amp; Announcements</category>
+      <category>Company Announcement</category>
+      <description>An official overview of the Hoberg Digital brand identity and group structure founded by Goodluck Iyanu in Lagos, Nigeria — spanning Agency, Jobs, Edu, Tools, Research, Colebox, Maji, Healthnehome, and FICQS.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Corporate Website Design: Building a Site That Signals Trust</title>
+      <link>https://hoberg.com.ng/blog/corporate-website-design</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/corporate-website-design</guid>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital Agency</dc:creator>
+      <category>Branding</category>
+      <category>Editorial Article &amp; Company Update</category>
+      <description>Corporate website design is about credibility, not decoration. Here is what makes a company website look established and trustworthy to serious clients.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/corporate-website-design.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>E-commerce Website Development in Nigeria: What Your Store Actually Needs</title>
+      <link>https://hoberg.com.ng/blog/ecommerce-website-development</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/ecommerce-website-development</guid>
+      <pubDate>Sat, 01 Aug 2026 08:30:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital Agency</dc:creator>
+      <category>E-commerce</category>
+      <category>Editorial Article &amp; Company Update</category>
+      <description>Planning an online store? Here is what e-commerce website development in Nigeria really involves, from Paystack and Flutterwave payment gateways to delivery logistics.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/ecommerce-website-development.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Website Design Cost in Nigeria: A Realistic Breakdown</title>
+      <link>https://hoberg.com.ng/blog/website-design-cost-nigeria</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/website-design-cost-nigeria</guid>
+      <pubDate>Sat, 01 Aug 2026 08:00:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital Agency</dc:creator>
+      <category>Pricing</category>
+      <category>Editorial Article &amp; Company Update</category>
+      <description>What does a website actually cost in Nigeria? A clear breakdown of the factors that affect pricing, without invented numbers or unrealistic promises.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/website-design-cost-nigeria.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Website Design Company in Lagos: What to Look For Before You Hire</title>
+      <link>https://hoberg.com.ng/blog/website-design-company-lagos</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/website-design-company-lagos</guid>
+      <pubDate>Sat, 01 Aug 2026 07:30:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital Agency</dc:creator>
+      <category>Local Business</category>
+      <category>Editorial Article &amp; Company Update</category>
+      <description>Looking for a website design company in Lagos? Here is what local businesses should check for, from response time to post-launch support, before signing on.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/website-design-company-lagos.jpg" type="image/jpeg" length="0" />
+    </item>
+    <item>
+      <title>Best Website Design Company in Nigeria: How to Choose in 2026</title>
+      <link>https://hoberg.com.ng/blog/best-website-design-company-nigeria</link>
+      <guid isPermaLink="true">https://hoberg.com.ng/blog/best-website-design-company-nigeria</guid>
+      <pubDate>Sat, 01 Aug 2026 07:00:00 GMT</pubDate>
+      <dc:creator>Hoberg Digital Agency</dc:creator>
+      <category>Buying Guides</category>
+      <category>Editorial Article &amp; Company Update</category>
+      <description>Looking for the best website design company in Nigeria? Learn what makes a reliable web design agency, what to verify before paying a deposit, and how Hoberg Digital Agency builds high-performing websites.</description>
+      <enclosure url="https://hoberg.com.ng/blog/assets/best-website-design-company-nigeria.jpg" type="image/jpeg" length="0" />
+    </item>
+  </channel>
+</rss>

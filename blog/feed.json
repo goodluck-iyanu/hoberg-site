@@ -1,0 +1,199 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Hoberg Digital Newsroom",
+  "home_page_url": "https://hoberg.com.ng/blog",
+  "feed_url": "https://hoberg.com.ng/blog/feed.json",
+  "description": "Official press releases, product launches, original research, and digital guides from Hoberg Digital in Lagos, Nigeria.",
+  "language": "en-NG",
+  "authors": [
+    {
+      "name": "Hoberg Digital",
+      "url": "https://hoberg.com.ng/"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report",
+      "url": "https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report",
+      "title": "Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies",
+      "summary": "Hoberg Digital publishes its 2026 AI Visibility Report auditing 50 Nigerian businesses — including Dangote, BUA Group, GTBank, Zenith Bank, Flutterwave, Paystack, Jumia, and Interswitch — on technical SEO, structured data, and AI crawler readiness.",
+      "image": "https://hoberg.com.ng/images/lagos-lagoon-poster.jpg",
+      "date_published": "2026-09-15T08:00:00.000Z",
+      "date_modified": "2026-10-24T11:00:00.000Z",
+      "authors": [
+        {
+          "name": "Goodluck Iyanu",
+          "url": "https://www.linkedin.com/in/goodluck-iyanu-54b63b434"
+        }
+      ],
+      "tags": [
+        "AI Visibility",
+        "Research Report",
+        "Nigerian Business",
+        "Technical SEO",
+        "Schema.org",
+        "LLMs",
+        "Lagos"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release",
+      "url": "https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release",
+      "title": "Hoberg Digital Expands Free Web Utilities Suite in Lagos: TikDrop, FileDrop, IMGDrop, and BGDrop",
+      "summary": "Hoberg Digital announces its suite of web utilities at hoberg.com.ng/tools — featuring TikDrop for saving TikTok videos alongside FileDrop, IMGDrop, and BGDrop.",
+      "image": "https://hoberg.com.ng/tools/assets/og-image.png",
+      "date_published": "2026-08-25T09:00:00.000Z",
+      "date_modified": "2026-10-24T11:00:00.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital",
+          "url": "https://hoberg.com.ng/"
+        }
+      ],
+      "tags": [
+        "Hoberg Tools",
+        "TikDrop",
+        "FileDrop",
+        "IMGDrop",
+        "BGDrop",
+        "Product Launch",
+        "Lagos"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem",
+      "url": "https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem",
+      "title": "Meet the Hoberg Digital Brand & Group Architecture: Agency, Jobs, Edu, Tools, Research, and Ventures",
+      "summary": "An official overview of the Hoberg Digital brand identity and group structure founded by Goodluck Iyanu in Lagos, Nigeria — spanning Agency, Jobs, Edu, Tools, Research, Colebox, Maji, Healthnehome, and FICQS.",
+      "image": "https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png",
+      "date_published": "2026-08-20T08:00:00.000Z",
+      "date_modified": "2026-10-24T11:00:00.000Z",
+      "authors": [
+        {
+          "name": "Goodluck Iyanu",
+          "url": "https://www.linkedin.com/in/goodluck-iyanu-54b63b434"
+        }
+      ],
+      "tags": [
+        "Hoberg Digital",
+        "Brand Identity",
+        "Goodluck Iyanu",
+        "Company Announcement",
+        "Hoberg Jobs",
+        "Hoberg Edu",
+        "Colebox",
+        "Lagos"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/corporate-website-design",
+      "url": "https://hoberg.com.ng/blog/corporate-website-design",
+      "title": "Corporate Website Design: Building a Site That Signals Trust",
+      "summary": "Corporate website design is about credibility, not decoration. Here is what makes a company website look established and trustworthy to serious clients.",
+      "image": "https://hoberg.com.ng/blog/assets/corporate-website-design.jpg",
+      "date_published": "2026-08-01T09:00:00.000Z",
+      "date_modified": "2026-08-01T17:25:00.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital Agency",
+          "url": "https://hoberg.com.ng/agency"
+        }
+      ],
+      "tags": [
+        "Corporate Website Design",
+        "Branding",
+        "Company Website Nigeria",
+        "B2B Trust",
+        "Hoberg Digital Agency"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/ecommerce-website-development",
+      "url": "https://hoberg.com.ng/blog/ecommerce-website-development",
+      "title": "E-commerce Website Development in Nigeria: What Your Store Actually Needs",
+      "summary": "Planning an online store? Here is what e-commerce website development in Nigeria really involves, from Paystack and Flutterwave payment gateways to delivery logistics.",
+      "image": "https://hoberg.com.ng/blog/assets/ecommerce-website-development.jpg",
+      "date_published": "2026-08-01T08:30:00.000Z",
+      "date_modified": "2026-08-01T17:20:00.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital Agency",
+          "url": "https://hoberg.com.ng/agency"
+        }
+      ],
+      "tags": [
+        "E-commerce Nigeria",
+        "Online Store Development",
+        "Paystack Integration",
+        "E-commerce",
+        "Hoberg Digital Agency"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/website-design-cost-nigeria",
+      "url": "https://hoberg.com.ng/blog/website-design-cost-nigeria",
+      "title": "Website Design Cost in Nigeria: A Realistic Breakdown",
+      "summary": "What does a website actually cost in Nigeria? A clear breakdown of the factors that affect pricing, without invented numbers or unrealistic promises.",
+      "image": "https://hoberg.com.ng/blog/assets/website-design-cost-nigeria.jpg",
+      "date_published": "2026-08-01T08:00:00.000Z",
+      "date_modified": "2026-08-01T17:15:00.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital Agency",
+          "url": "https://hoberg.com.ng/agency"
+        }
+      ],
+      "tags": [
+        "Website Cost Nigeria",
+        "Pricing",
+        "Business Website Pricing",
+        "Web Development Nigeria",
+        "Hoberg Digital Agency"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/website-design-company-lagos",
+      "url": "https://hoberg.com.ng/blog/website-design-company-lagos",
+      "title": "Website Design Company in Lagos: What to Look For Before You Hire",
+      "summary": "Looking for a website design company in Lagos? Here is what local businesses should check for, from response time to post-launch support, before signing on.",
+      "image": "https://hoberg.com.ng/blog/assets/website-design-company-lagos.jpg",
+      "date_published": "2026-08-01T07:30:00.000Z",
+      "date_modified": "2026-08-23T19:38:54.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital Agency",
+          "url": "https://hoberg.com.ng/agency"
+        }
+      ],
+      "tags": [
+        "Web Design Lagos",
+        "Local Business",
+        "Lagos Website Developers",
+        "Website Design Nigeria",
+        "Hoberg Digital Agency"
+      ]
+    },
+    {
+      "id": "https://hoberg.com.ng/blog/best-website-design-company-nigeria",
+      "url": "https://hoberg.com.ng/blog/best-website-design-company-nigeria",
+      "title": "Best Website Design Company in Nigeria: How to Choose in 2026",
+      "summary": "Looking for the best website design company in Nigeria? Learn what makes a reliable web design agency, what to verify before paying a deposit, and how Hoberg Digital Agency builds high-performing websites.",
+      "image": "https://hoberg.com.ng/blog/assets/best-website-design-company-nigeria.jpg",
+      "date_published": "2026-08-01T07:00:00.000Z",
+      "date_modified": "2026-10-24T11:00:00.000Z",
+      "authors": [
+        {
+          "name": "Hoberg Digital Agency",
+          "url": "https://hoberg.com.ng/agency"
+        }
+      ],
+      "tags": [
+        "Website Design Nigeria",
+        "Buying Guides",
+        "Web Design Agency",
+        "Lagos",
+        "Hoberg Digital Agency"
+      ]
+    }
+  ]
+}

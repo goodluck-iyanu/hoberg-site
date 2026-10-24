@@ -1,0 +1,130 @@
+{
+  "siteUrl": "https://hoberg.com.ng",
+  "newsroomUrl": "https://hoberg.com.ng/blog",
+  "adminUrl": "https://hoberg.com.ng/blog/admin",
+  "repository": {
+    "owner": "goodluck-iyanu",
+    "repo": "hoberg-site",
+    "branch": "main"
+  },
+  "organization": {
+    "id": "https://hoberg.com.ng/#org",
+    "name": "Hoberg Digital",
+    "agencyName": "Hoberg Digital Agency",
+    "legalFounder": "Goodluck Iyanu",
+    "founderId": "https://hoberg.com.ng/#owner",
+    "founderRole": "Founder & Owner",
+    "founderLinkedIn": "https://www.linkedin.com/in/goodluck-iyanu-54b63b434",
+    "foundingLocation": "Lagos, Nigeria",
+    "addressLocality": "Lagos",
+    "addressCountry": "NG",
+    "telephone": "+234-810-428-9365",
+    "whatsapp": "https://wa.me/2348104289365",
+    "email": "hello@hoberg.com.ng",
+    "logo": "https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png",
+    "favicon": "https://hoberg.com.ng/favicon.png",
+    "language": "en-NG",
+    "sameAs": [
+      "https://www.linkedin.com/in/goodluck-iyanu-54b63b434",
+      "https://www.instagram.com/hoberg.com.ng",
+      "https://www.tiktok.com/@hoberg.ng",
+      "https://x.com/hoberglagos"
+    ]
+  },
+  "indexNow": {
+    "enabled": true,
+    "host": "hoberg.com.ng",
+    "key": "4f8b92e1c7d34a6085e2b190f3c6d8a4",
+    "keyLocation": "https://hoberg.com.ng/4f8b92e1c7d34a6085e2b190f3c6d8a4.txt",
+    "endpoint": "https://api.indexnow.org/indexnow"
+  },
+  "bingSiteAuth": "A5B0BF2099CAE7CB0985123D160E2275",
+  "yandexVerification": "a26e770b29df0891",
+  "contentTypes": [
+    {
+      "id": "press-release",
+      "label": "Official Press Release",
+      "schemaType": "NewsArticle",
+      "badgeColor": "#C8102E",
+      "description": "Formal company press releases with dateline and media attribution."
+    },
+    {
+      "id": "company-announcement",
+      "label": "Company Announcement",
+      "schemaType": "NewsArticle",
+      "badgeColor": "#C8102E",
+      "description": "Official announcements from Hoberg Digital and its group ventures."
+    },
+    {
+      "id": "product-launch",
+      "label": "Product Launch & Update",
+      "schemaType": "Article",
+      "badgeColor": "#9A6B13",
+      "description": "New product releases, platform launches, and feature updates."
+    },
+    {
+      "id": "partnership",
+      "label": "Partnership & Collaboration",
+      "schemaType": "NewsArticle",
+      "badgeColor": "#1769FF",
+      "description": "Strategic collaborations, joint ventures, and partner announcements."
+    },
+    {
+      "id": "milestone",
+      "label": "Business Milestone",
+      "schemaType": "Article",
+      "badgeColor": "#1F7A4C",
+      "description": "Verified operational, product, and growth milestones."
+    },
+    {
+      "id": "official-statement",
+      "label": "Official Statement",
+      "schemaType": "NewsArticle",
+      "badgeColor": "#0E0B08",
+      "description": "Public statements and clarifications issued by Hoberg Digital."
+    },
+    {
+      "id": "event-activity",
+      "label": "Event & Company Activity",
+      "schemaType": "Article",
+      "badgeColor": "#6B3FA0",
+      "description": "Company events, community initiatives, and field activities."
+    },
+    {
+      "id": "tech-ai-article",
+      "label": "Technology & AI Article",
+      "schemaType": "BlogPosting",
+      "badgeColor": "#0F5257",
+      "description": "Technical insights on web engineering, AI search, and automation."
+    },
+    {
+      "id": "research-report",
+      "label": "Research, Report & Original Insight",
+      "schemaType": "Article",
+      "badgeColor": "#8B2635",
+      "description": "Original data studies, market audits, and downloadable reports."
+    },
+    {
+      "id": "editorial-guide",
+      "label": "Editorial Article & Company Update",
+      "schemaType": "BlogPosting",
+      "badgeColor": "#4A443C",
+      "description": "Practical buying guides, pricing breakdowns, and digital growth advice."
+    }
+  ],
+  "ecosystemLinks": [
+    { "name": "Hoberg Digital Home", "url": "https://hoberg.com.ng/", "category": "Group" },
+    { "name": "Hoberg Digital Agency", "url": "https://hoberg.com.ng/agency", "category": "Agency" },
+    { "name": "Hoberg Services", "url": "https://hoberg.com.ng/services", "category": "Agency" },
+    { "name": "Hoberg Jobs", "url": "https://jobs.hoberg.com.ng/", "category": "Platform" },
+    { "name": "Hoberg Edu", "url": "https://edu.hoberg.com.ng/", "category": "Platform" },
+    { "name": "Hoberg Tools", "url": "https://hoberg.com.ng/tools/", "category": "Utilities" },
+    { "name": "TikDrop", "url": "https://hoberg.com.ng/tools/tikdrop/", "category": "Utilities" },
+    { "name": "Hoberg Research", "url": "https://hoberg.com.ng/research/2026-ai-visibility-report/", "category": "Research" },
+    { "name": "ColeBox × Hoberg", "url": "https://hoberg.com.ng/colebox", "category": "Ventures" },
+    { "name": "Maji by Hoberg", "url": "https://maji.hoberg.com.ng/", "category": "Ventures" },
+    { "name": "Healthnehome", "url": "https://healthnehome.hoberg.com.ng/", "category": "Ventures" },
+    { "name": "FICQS", "url": "https://ficqs.hoberg.com/", "category": "Sister Company" }
+  ]
+}
+

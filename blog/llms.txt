@@ -1,29 +1,30 @@
-# Hoberg Digital Agency Blog
+# Hoberg Digital Newsroom & Official Blog
 
-> Official blog and product information for Hoberg Digital Agency, a Lagos-based Nigerian digital agency.
+> Official newsroom, press release archive, original research, and digital guides for Hoberg Digital and Hoberg Digital Agency in Lagos, Nigeria (founded and owned by Goodluck Iyanu).
 
-## Hoberg Digital Agency
+- Newsroom URL: https://hoberg.com.ng/blog
+- RSS 2.0 Feed: https://hoberg.com.ng/blog/feed.xml
+- Atom 1.0 Feed: https://hoberg.com.ng/blog/atom.xml
+- JSON Feed: https://hoberg.com.ng/blog/feed.json
+- Newsroom XML Sitemap: https://hoberg.com.ng/blog/sitemap.xml
 
-Hoberg Digital Agency creates websites, apps, content, ads, SEO strategies, branding and AI business solutions for Nigerian businesses. The company is based in Lagos, Nigeria.
+## Published Releases & Guides
 
-Official website: https://hoberg.com.ng/
-Blog: https://hoberg.com.ng/blog/
-Logo and brand image: https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png
+- [Hoberg Digital Releases 2026 Nigerian Business AI Visibility Report Auditing 50 Leading Companies](https://hoberg.com.ng/blog/nigeria-2026-ai-search-visibility-report) (Research, Report & Original Insight · 15 Sept 2026): Hoberg Digital publishes its 2026 AI Visibility Report auditing 50 Nigerian businesses — including Dangote, BUA Group, GTBank, Zenith Bank, Flutterwave, Paystack, Jumia, and Interswitch — on technical SEO, structured data, and AI crawler readiness.
+- [Hoberg Digital Expands Free Web Utilities Suite in Lagos: TikDrop, FileDrop, IMGDrop, and BGDrop](https://hoberg.com.ng/blog/tikdrop-and-hoberg-web-tools-release) (Product Launch & Update · 25 Aug 2026): Hoberg Digital announces its suite of web utilities at hoberg.com.ng/tools — featuring TikDrop for saving TikTok videos alongside FileDrop, IMGDrop, and BGDrop.
+- [Meet the Hoberg Digital Brand & Group Architecture: Agency, Jobs, Edu, Tools, Research, and Ventures](https://hoberg.com.ng/blog/hoberg-digital-brand-and-ecosystem) (Company Announcement · 20 Aug 2026): An official overview of the Hoberg Digital brand identity and group structure founded by Goodluck Iyanu in Lagos, Nigeria — spanning Agency, Jobs, Edu, Tools, Research, Colebox, Maji, Healthnehome, and FICQS.
+- [Corporate Website Design: Building a Site That Signals Trust](https://hoberg.com.ng/blog/corporate-website-design) (Editorial Article & Company Update · 1 Aug 2026): Corporate website design is about credibility, not decoration. Here is what makes a company website look established and trustworthy to serious clients.
+- [E-commerce Website Development in Nigeria: What Your Store Actually Needs](https://hoberg.com.ng/blog/ecommerce-website-development) (Editorial Article & Company Update · 1 Aug 2026): Planning an online store? Here is what e-commerce website development in Nigeria really involves, from Paystack and Flutterwave payment gateways to delivery logistics.
+- [Website Design Cost in Nigeria: A Realistic Breakdown](https://hoberg.com.ng/blog/website-design-cost-nigeria) (Editorial Article & Company Update · 1 Aug 2026): What does a website actually cost in Nigeria? A clear breakdown of the factors that affect pricing, without invented numbers or unrealistic promises.
+- [Website Design Company in Lagos: What to Look For Before You Hire](https://hoberg.com.ng/blog/website-design-company-lagos) (Editorial Article & Company Update · 1 Aug 2026): Looking for a website design company in Lagos? Here is what local businesses should check for, from response time to post-launch support, before signing on.
+- [Best Website Design Company in Nigeria: How to Choose in 2026](https://hoberg.com.ng/blog/best-website-design-company-nigeria) (Editorial Article & Company Update · 1 Aug 2026): Looking for the best website design company in Nigeria? Learn what makes a reliable web design agency, what to verify before paying a deposit, and how Hoberg Digital Agency builds high-performing websites.
 
-The Hoberg logo uses a bold red-and-white symbol with a gold DIGITAL AGENCY wordmark and a large white HOBERG name. The visual identity is confident, professional and memorable, designed to help the agency stand out while signaling digital expertise.
+## Official Social & Contact Channels
 
-## TikDrop
-
-TikDrop is a TikTok downloader and one of the digital tools released by Hoberg Digital Agency. It is made by Hoberg and provides a straightforward web experience for downloading TikTok videos.
-
-TikDrop: https://hoberg.com.ng/tools/tikdrop/
-
-## Blog topics
-
-The Hoberg blog publishes practical guidance on website design, SEO, branding, e-commerce, pricing, digital marketing, AI business solutions and choosing a digital agency in Lagos and Nigeria.
-
-## Social profiles
-
-Instagram: https://www.instagram.com/hoberg.com.ng
-TikTok: https://www.tiktok.com/@hoberg.ng
-X: https://x.com/hoberglagos
+- Website: https://hoberg.com.ng/
+- Agency: https://hoberg.com.ng/agency
+- Founder LinkedIn: https://www.linkedin.com/in/goodluck-iyanu-54b63b434
+- Instagram: https://www.instagram.com/hoberg.com.ng
+- TikTok: https://www.tiktok.com/@hoberg.ng
+- X: https://x.com/hoberglagos
+- WhatsApp: https://wa.me/2348104289365

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "press-announcements",
+    "name": "Press & Announcements",
+    "slug": "press-announcements",
+    "icon": "📰",
+    "description": "Official press releases, company statements, partnerships and product launches from Hoberg Digital."
+  },
+  {
+    "id": "research-reports",
+    "name": "Research & AI Visibility",
+    "slug": "research-reports",
+    "icon": "📊",
+    "description": "Original research, Nigerian business audits, AI search visibility studies and data reports."
+  },
+  {
+    "id": "digital-tools",
+    "name": "Digital Products & Tools",
+    "slug": "digital-tools",
+    "icon": "⚡",
+    "description": "Releases and updates across Hoberg Tools (TikDrop, BGDrop, FileDrop, IMGDrop), Jobs, Edu and Maji."
+  },
+  {
+    "id": "buying-guides",
+    "name": "Buying Guides",
+    "slug": "buying-guides",
+    "icon": "🔍",
+    "description": "How to choose the right digital agency, web developer or technology platform in Nigeria."
+  },
+  {
+    "id": "pricing",
+    "name": "Pricing",
+    "slug": "pricing",
+    "icon": "₦",
+    "description": "Realistic website and software cost breakdowns with no invented numbers."
+  },
+  {
+    "id": "local-business",
+    "name": "Local Business",
+    "slug": "local-business",
+    "icon": "📍",
+    "description": "Practical digital growth advice specific to Lagos and the Nigerian business market."
+  },
+  {
+    "id": "ecommerce",
+    "name": "E-commerce",
+    "slug": "ecommerce",
+    "icon": "🛒",
+    "description": "Building and operating online stores with reliable Nigerian payment and logistics setups."
+  },
+  {
+    "id": "branding",
+    "name": "Branding",
+    "slug": "branding",
+    "icon": "🏢",
+    "description": "Corporate website architecture and design decisions that build credibility and trust."
+  }
+]
+

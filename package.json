@@ -1,0 +1,22 @@
+{
+  "name": "hoberg-digital-website-and-newsroom",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Official Hoberg Digital Website & Production Press-Release Publishing Platform (https://hoberg.com.ng/blog)",
+  "main": "blog/server.js",
+  "scripts": {
+    "start": "node blog/server.js",
+    "build": "node blog/scripts/build-newsroom.js",
+    "build:notify": "node blog/scripts/build-newsroom.js --notify-indexnow",
+    "migrate": "node blog/scripts/migrate-existing.js",
+    "test": "node blog/scripts/test-newsroom.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodluck-iyanu/hoberg-site.git"
+  },
+  "author": "Goodluck Iyanu <hello@hoberg.com.ng> (https://hoberg.com.ng)",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Not Found | Hoberg Digital Newsroom</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#C8102E">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/\/+$/, '');
+      fetch('/blog/data/redirects.json')
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (list) {
+          if (!Array.isArray(list)) return;
+          for (var i = 0; i < list.length; i++) {
+            var fromClean = String(list[i].from || '').replace(/\/+$/, '');
+            if (fromClean === path && list[i].to) {
+              window.location.replace(list[i].to);
+              return;
+            }
+          }
+        })
+        .catch(function () {});
+    })();
+  </script>
+</head>
+<body>
+  <main id="main">
+    <section class="hero" style="padding: 96px 24px;">
+      <div class="hero-inner">
+        <span class="eyebrow">HTTP 404 · Release Not Found</span>
+        <h1>That Newsroom article is unavailable.</h1>
+        <p class="hero-sub">It may have been unpublished, archived, or moved to a new permanent URL.</p>
+        <div class="hero-actions" style="margin-top: 28px;">
+          <a class="btn btn-primary" href="/blog">Return to Newsroom</a>
+          <a class="btn btn-outline" href="https://hoberg.com.ng/">Hoberg Digital Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

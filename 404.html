@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Hoberg Digital</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#C8102E">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <script>
+    // Check /blog/data/redirects.json for moved article slugs
+    (function () {
+      var path = window.location.pathname.replace(/\/+$/, '');
+      if (path.indexOf('/blog') === 0) {
+        fetch('/blog/data/redirects.json')
+          .then(function (r) { return r.ok ? r.json() : []; })
+          .then(function (list) {
+            if (!Array.isArray(list)) return;
+            for (var i = 0; i < list.length; i++) {
+              var fromClean = String(list[i].from || '').replace(/\/+$/, '');
+              if (fromClean === path && list[i].to) {
+                window.location.replace(list[i].to);
+                return;
+              }
+            }
+          })
+          .catch(function () {});
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo-link" href="https://hoberg.com.ng/" aria-label="Hoberg Digital home">
+        <img src="/blog/assets/hoberg-brand-logo.png" alt="Hoberg Digital logo" width="120" height="48">
+        <span class="logo-badge">Hoberg</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="https://hoberg.com.ng/">Hoberg Home</a></li>
+          <li><a href="https://hoberg.com.ng/agency">Agency</a></li>
+          <li><a href="/blog">Newsroom</a></li>
+          <li><a href="https://hoberg.com.ng/tools/">Tools</a></li>
+          <li><a href="https://jobs.hoberg.com.ng/">Jobs</a></li>
+          <li><a href="https://edu.hoberg.com.ng/">Edu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding: 96px 24px;">
+      <div class="hero-inner">
+        <span class="eyebrow">HTTP 404 · Page Not Found</span>
+        <h1>We couldn't find that <em>page or release.</em></h1>
+        <p class="hero-sub">The link may have moved, been archived, or had its URL updated. Browse the official Hoberg Digital Newsroom or return to the Hoberg homepage below.</p>
+        <div class="hero-actions" style="margin-top: 28px;">
+          <a class="btn btn-primary" href="/blog">Open Hoberg Newsroom</a>
+          <a class="btn btn-outline" href="https://hoberg.com.ng/">Hoberg Digital Home</a>
+          <a class="btn btn-outline" href="https://wa.me/2348104289365">WhatsApp Desk</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

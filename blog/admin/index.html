@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Newsroom Admin Portal | Hoberg Digital</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#0E0B08">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hoberg Newsroom">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/blog/css/admin.css">
+</head>
+<body>
+  <!-- TOP BAR -->
+  <header class="admin-topbar">
+    <div class="topbar-inner">
+      <a class="topbar-brand" href="/blog/admin">
+        <img src="/blog/assets/hoberg-brand-logo.png" alt="Hoberg Digital">
+        <span class="topbar-badge">Newsroom Admin</span>
+      </a>
+      <div class="topbar-actions" id="topbarActions" style="display:none;">
+        <span class="mode-indicator" id="connectionBadge">
+          <span class="mode-dot"></span>
+          <span id="connectionLabel">Connected</span>
+        </span>
+        <button type="button" class="btn btn-primary btn-sm" id="topNewArticleBtn">+ New Release</button>
+        <a class="btn btn-outline btn-sm" style="background:transparent;color:#fff;border-color:rgba(255,255,255,0.3);" href="/blog" target="_blank" rel="noopener">Live Newsroom ↗</a>
+        <button type="button" class="btn btn-danger btn-sm" id="logoutBtn">Lock / Sign Out</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- AUTHENTICATION GATE -->
+  <main id="authView" class="auth-wrapper" aria-labelledby="authHeading">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1 id="authHeading">Hoberg Newsroom Studio</h1>
+        <p>Private mobile-first publishing portal for <strong>hoberg.com.ng/blog</strong>. Sign in securely to create, edit, and publish official announcements.</p>
+      </div>
+
+      <div class="auth-tabs" role="tablist">
+        <button type="button" class="auth-tab active" id="authTabGithub" role="tab" aria-selected="true">iPhone / GitHub Vault</button>
+        <button type="button" class="auth-tab" id="authTabServer" role="tab" aria-selected="false">Node Server API</button>
+      </div>
+
+      <!-- Mode 1: Unlock existing AES-GCM Vault -->
+      <form id="vaultUnlockForm" style="display:none;">
+        <div class="form-group">
+          <label for="unlockPassphrase">Admin Vault Passphrase</label>
+          <input type="password" id="unlockPassphrase" class="form-control" placeholder="Enter your vault passphrase" autocomplete="current-password" required>
+          <span class="form-hint">Decrypts your stored GitHub publishing token locally using AES-256-GCM.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="unlockVaultBtn">Unlock Publishing Studio</button>
+        <div style="margin-top: 14px; text-align: center;">
+          <button type="button" id="resetVaultLink" style="color:var(--muted); font-size:0.8rem; text-decoration:underline;">Reset or replace stored GitHub token</button>
+        </div>
+      </form>
+
+      <!-- Mode 1B: First-time Vault Setup (GitHub PAT + Passphrase) -->
+      <form id="vaultSetupForm">
+        <div class="form-group">
+          <label for="setupRepo">Target GitHub Repository</label>
+          <input type="text" id="setupRepo" class="form-control" value="goodluck-iyanu/hoberg-site" required>
+          <span class="form-hint">Branch: <code>main</code> (deploys live to hoberg.com.ng)</span>
+        </div>
+        <div class="form-group">
+          <label for="setupGithubToken">GitHub Personal Access Token (PAT)</label>
+          <input type="password" id="setupGithubToken" class="form-control" placeholder="github_pat_... or ghp_..." autocomplete="off" required>
+          <span class="form-hint">Fine-grained token with <strong>Contents: Read &amp; Write</strong> on <code>goodluck-iyanu/hoberg-site</code>. Verified against GitHub API.</span>
+        </div>
+        <div class="form-group">
+          <label for="setupPassphrase">Create Local Admin Passphrase (min 8 chars)</label>
+          <input type="password" id="setupPassphrase" class="form-control" placeholder="Create strong passphrase for iPhone unlock" minlength="8" autocomplete="new-password" required>
+          <span class="form-hint">Encrypts your token with PBKDF2 (250,000 iterations) + AES-256-GCM so it is never stored in plaintext.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="setupVaultBtn">Verify &amp; Sign In</button>
+      </form>
+
+      <!-- Mode 2: Node.js Server Backend Login (/api/blog/auth/login) -->
+      <form id="serverLoginForm" style="display:none;">
+        <div class="form-group">
+          <label for="serverAdminSecret">Administrator Password / Secret</label>
+          <input type="password" id="serverAdminSecret" class="form-control" placeholder="Enter HOBERG_ADMIN_SECRET" autocomplete="current-password" required>
+          <span class="form-hint">Authenticates against the server-side API (<code>/api/blog/auth/login</code>) with rate-limiting and HttpOnly session protection.</span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="serverLoginBtn">Sign In to Server</button>
+      </form>
+
+      <div id="authErrorBox" style="display:none; margin-top:16px; padding:12px; border-radius:8px; background:var(--danger-bg); color:var(--danger); font-size:0.85rem; font-weight:600;" role="alert"></div>
+    </div>
+  </main>
+
+  <!-- AUTHENTICATED ADMIN WORKSPACE -->
+  <div id="appView" class="admin-container" style="display:none;">
+    <nav class="admin-nav-tabs" aria-label="Admin Portal Sections">
+      <button type="button" class="admin-nav-btn active" data-admin-tab="dashboard">1. Overview &amp; Articles</button>
+      <button type="button" class="admin-nav-btn" data-admin-tab="editor">2. Press Release Editor</button>
+      <button type="button" class="admin-nav-btn" data-admin-tab="media">3. Media Library</button>
+      <button type="button" class="admin-nav-btn" data-admin-tab="status">4. Publication &amp; Indexing Status</button>
+      <button type="button" class="admin-nav-btn" data-admin-tab="seo">5. Redirects, SEO &amp; Search Console</button>
+    </nav>
+
+    <!-- TAB 1: DASHBOARD & ARTICLES -->
+    <section id="tab-dashboard" class="admin-tab-panel">
+      <div id="autosaveRecoveryBanner" class="panel-card" style="display:none; border-left:4px solid var(--hoberg-gold); background:var(--amber-bg);">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+          <div>
+            <strong>Unsaved Local Draft Found</strong>
+            <p id="autosaveRecoveryText" style="font-size:0.85rem; color:var(--muted); margin-top:2px;"></p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn btn-primary btn-sm" id="restoreAutosaveBtn">Restore Draft</button>
+            <button type="button" class="btn btn-outline btn-sm" id="discardAutosaveBtn">Discard</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Published Releases</div>
+          <div class="stat-value" id="statPublished">0</div>
+          <div class="stat-sub">Live on /blog &amp; sitemaps</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Drafts</div>
+          <div class="stat-value" id="statDrafts">0</div>
+          <div class="stat-sub">Excluded from public &amp; crawlers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Scheduled</div>
+          <div class="stat-value" id="statScheduled">0</div>
+          <div class="stat-sub">Queued for auto-release</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Archived</div>
+          <div class="stat-value" id="statArchived">0</div>
+          <div class="stat-sub">Unlisted historical records</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">SEO &amp; Schema Valid</div>
+          <div class="stat-value" id="statValidSeo">0/0</div>
+          <div class="stat-sub">JSON-LD + Open Graph verified</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Media &amp; Redirects</div>
+          <div class="stat-value" id="statMediaCount">0</div>
+          <div class="stat-sub" id="statRedirectsSub">0 active 301 redirects</div>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>All Newsroom Articles &amp; Press Releases</h2>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-outline btn-sm" id="syncAllPipelineBtn">Rebuild Sitemaps &amp; Feeds</button>
+            <button type="button" class="btn btn-primary btn-sm" id="dashNewArticleBtn">+ Create New Release</button>
+          </div>
+        </div>
+
+        <div class="toolbar-filters">
+          <input type="search" id="adminSearchInput" class="form-control" placeholder="Search by headline, slug, category, tag...">
+          <select id="adminStatusFilter" class="form-control">
+            <option value="all">All Statuses</option>
+            <option value="published">Published</option>
+            <option value="draft">Drafts</option>
+            <option value="scheduled">Scheduled</option>
+            <option value="archived">Archived</option>
+          </select>
+          <select id="adminTypeFilter" class="form-control">
+            <option value="all">All Content Types</option>
+          </select>
+          <select id="adminCategoryFilter" class="form-control">
+            <option value="all">All Categories</option>
+          </select>
+        </div>
+
+        <div id="adminArticleList" class="article-admin-list"></div>
+      </div>
+    </section>
+
+    <!-- TAB 2: PRESS RELEASE & ARTICLE EDITOR -->
+    <section id="tab-editor" class="admin-tab-panel" style="display:none;">
+      <form id="articleEditorForm">
+        <input type="hidden" id="editArticleId">
+        <input type="hidden" id="editOriginalSlug">
+
+        <div class="editor-grid">
+          <!-- Left Column: Main Content & Rich Text Editor -->
+          <div>
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2 id="editorHeading">Create Official Press Release / Article</h2>
+                <span class="status-pill status-draft" id="editorCurrentStatusBadge">New Draft</span>
+              </div>
+
+              <div class="form-group">
+                <label for="editTitle">Headline (H1) *</label>
+                <input type="text" id="editTitle" class="form-control" placeholder="e.g. Hoberg Digital Launches New AI Visibility Platform for Nigerian SMEs" required>
+              </div>
+
+              <div class="form-group">
+                <label for="editSubtitle">Subtitle / Standfirst Lede</label>
+                <input type="text" id="editSubtitle" class="form-control" placeholder="Optional secondary headline displayed below the main title">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editSlug">Permanent URL Slug (/blog/[slug]) *</label>
+                  <input type="text" id="editSlug" class="form-control" placeholder="auto-generated-from-headline" required>
+                  <span class="form-hint" id="slugChangeHint">Public URL: <code>https://hoberg.com.ng/blog/<span id="slugPreviewSpan">...</span></code></span>
+                </div>
+                <div class="form-group">
+                  <label for="editDateline">Dateline / Location</label>
+                  <input type="text" id="editDateline" class="form-control" value="LAGOS, NIGERIA" placeholder="e.g. LAGOS, NIGERIA">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="editSummary">Executive Summary / Card Excerpt *</label>
+                <textarea id="editSummary" class="form-control" rows="3" placeholder="Clear 1-2 sentence summary used on the Newsroom archive, RSS feeds, and default meta description." required></textarea>
+              </div>
+
+              <!-- Rich Text Editor -->
+              <div class="form-group">
+                <label>Main Article Content *</label>
+                <div class="rte-container">
+                  <div class="rte-toolbar" role="toolbar" aria-label="Formatting toolbar">
+                    <button type="button" class="rte-btn" data-rte-cmd="h2" title="Heading 2">H2</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="h3" title="Heading 3">H3</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="p" title="Paragraph">¶</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="bold" title="Bold"><strong>B</strong></button>
+                    <button type="button" class="rte-btn" data-rte-cmd="italic" title="Italic"><em>I</em></button>
+                    <button type="button" class="rte-btn" data-rte-cmd="insertUnorderedList" title="Bullet List">• List</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="insertOrderedList" title="Numbered List">1. List</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="lede" title="Insert Intro Lede Callout">Lede Box</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="pullnote" title="Insert Pull Note">Pull Note</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="checklist" title="Insert Checklist">✓ Checklist</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="blockquote" title="Blockquote">“ Quote</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="link" title="Insert Link">🔗 Link</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="table" title="Insert Data Table">⊞ Table</button>
+                    <button type="button" class="rte-btn" data-rte-cmd="code" title="Insert Code Block">&lt;/&gt;</button>
+                    <button type="button" class="rte-btn" id="rteInsertImageBtn" title="Upload or Insert Inline Image">🖼 Image</button>
+                    <button type="button" class="rte-btn" id="rteToggleSourceBtn" title="Switch between Visual Editor and HTML Source">HTML Source</button>
+                  </div>
+                  <div id="rteCanvas" class="rte-canvas" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Article body editor"></div>
+                  <textarea id="rteSource" class="rte-source" aria-label="HTML source editor"></textarea>
+                </div>
+                <input type="file" id="inlineImageFileInput" accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml" style="display:none;">
+              </div>
+
+              <div class="form-group">
+                <label for="editCtaHtml">Bottom Call-to-Action Text (Optional)</label>
+                <textarea id="editCtaHtml" class="form-control" rows="2" placeholder="Optional custom paragraph shown inside the 'Work With Hoberg Digital' box at the end of the article."></textarea>
+              </div>
+            </div>
+
+            <!-- Structured Repeaters: FAQs, Press Kit, References -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>FAQ Accordion &amp; Schema.org FAQPage</h2>
+                <button type="button" class="btn btn-outline btn-sm" id="addFaqBtn">+ Add FAQ Question</button>
+              </div>
+              <p class="form-hint" style="margin-bottom:12px;">Questions added here render an accessible accordion on the article page and automatically generate validated <code>FAQPage</code> JSON-LD structured data.</p>
+              <div id="faqRepeaterList" class="repeater-list"></div>
+            </div>
+
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Press Kit &amp; Downloadable Documents</h2>
+                <button type="button" class="btn btn-outline btn-sm" id="addPressKitBtn">+ Add Document / Resource</button>
+              </div>
+              <div id="pressKitRepeaterList" class="repeater-list"></div>
+            </div>
+
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>External Links &amp; Cited References</h2>
+                <button type="button" class="btn btn-outline btn-sm" id="addReferenceBtn">+ Add Source Citation</button>
+              </div>
+              <div id="referenceRepeaterList" class="repeater-list"></div>
+            </div>
+          </div>
+
+          <!-- Right Column: Publishing Settings, Media, Video, Media Contact & SEO -->
+          <div>
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Publishing &amp; Classification</h2>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editStatus">Publication Status *</label>
+                  <select id="editStatus" class="form-control">
+                    <option value="published">Published (Live)</option>
+                    <option value="draft">Draft (Private)</option>
+                    <option value="scheduled">Scheduled</option>
+                    <option value="archived">Archived (Unlisted)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="editContentType">Content-Type Label *</label>
+                  <select id="editContentType" class="form-control"></select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editSchemaType">Schema.org JSON-LD Type</label>
+                  <select id="editSchemaType" class="form-control">
+                    <option value="NewsArticle">NewsArticle (Press Releases &amp; News)</option>
+                    <option value="Article">Article (Reports, Launches &amp; Statements)</option>
+                    <option value="BlogPosting">BlogPosting (Editorial &amp; Tech Guides)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="editCategory">Newsroom Category *</label>
+                  <select id="editCategory" class="form-control"></select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="editTags">Tags (comma-separated)</label>
+                <input type="text" id="editTags" class="form-control" placeholder="e.g. Press Release, AI Visibility, Lagos, Product Launch">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editAuthorId">Author / Desk</label>
+                  <select id="editAuthorId" class="form-control"></select>
+                </div>
+                <div class="form-group">
+                  <label for="editIssuingOrg">Issuing Organization</label>
+                  <input type="text" id="editIssuingOrg" class="form-control" value="Hoberg Digital">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editDatePublished">Publication Date &amp; Time</label>
+                  <input type="datetime-local" id="editDatePublished" class="form-control">
+                </div>
+                <div class="form-group" id="scheduledForGroup" style="display:none;">
+                  <label for="editScheduledFor">Scheduled Release Time</label>
+                  <input type="datetime-local" id="editScheduledFor" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group" style="display:flex; align-items:center; gap:10px; margin-top:6px;">
+                <input type="checkbox" id="editFeatured" style="width:20px; height:20px;">
+                <label for="editFeatured" style="margin-bottom:0; cursor:pointer;">Feature in Newsroom Spotlight on /blog homepage</label>
+              </div>
+            </div>
+
+            <!-- Featured Image Manager -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Featured Image &amp; Attribution</h2>
+              </div>
+              <div class="form-group">
+                <label>Upload from iPhone Photo Library / Device</label>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                  <label class="btn btn-outline btn-sm" style="cursor:pointer;">
+                    📷 Choose / Upload Image
+                    <input type="file" id="featuredImageFileInput" accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml" style="display:none;">
+                  </label>
+                  <button type="button" class="btn btn-outline btn-sm" id="pickFromLibraryBtn">Pick from Media Library</button>
+                </div>
+                <span class="form-hint" id="featuredUploadStatus">Auto-optimizes large iPhone photos for fast mobile delivery.</span>
+              </div>
+
+              <div id="featuredImagePreviewWrap" style="display:none; margin-bottom:12px; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:#000;">
+                <img id="featuredImagePreview" src="" alt="Featured preview" style="width:100%; max-height:180px; object-fit:cover;">
+              </div>
+
+              <div class="form-group">
+                <label for="editFeatImgUrl">Featured Image URL *</label>
+                <input type="url" id="editFeatImgUrl" class="form-control" placeholder="https://hoberg.com.ng/blog/assets/hoberg-brand-logo.png">
+              </div>
+              <div class="form-group">
+                <label for="editFeatImgAlt">Meaningful Alt Text (Accessibility) *</label>
+                <input type="text" id="editFeatImgAlt" class="form-control" placeholder="Describe the image for screen readers &amp; Google Images">
+              </div>
+              <div class="form-group">
+                <label for="editFeatImgCaption">Visible Caption</label>
+                <input type="text" id="editFeatImgCaption" class="form-control" placeholder="Caption shown below the featured image">
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="editFeatImgCredit">Creator / Photo Credit</label>
+                  <input type="text" id="editFeatImgCredit" class="form-control" placeholder="e.g. Hoberg Digital">
+                </div>
+                <div class="form-group">
+                  <label for="editFeatImgLicense">License / Permission Note</label>
+                  <input type="text" id="editFeatImgLicense" class="form-control" placeholder="e.g. Official Hoberg Media">
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Embed & Upload Manager -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Video Embed or Upload (Optional)</h2>
+              </div>
+              <div class="form-group">
+                <label for="editVideoUrl">YouTube, Vimeo, or Direct MP4/WebM URL</label>
+                <input type="url" id="editVideoUrl" class="form-control" placeholder="https://www.youtube.com/watch?v=... or https://hoberg.com.ng/videos/...">
+                <div style="margin-top:8px;">
+                  <label class="btn btn-outline btn-sm" style="cursor:pointer;">
+                    🎬 Upload MP4/WebM Video (Max 25MB)
+                    <input type="file" id="videoFileInput" accept="video/mp4,video/webm" style="display:none;">
+                  </label>
+                </div>
+                <span class="form-hint">Generates responsive player and <code>VideoObject</code> JSON-LD + video sitemap entry.</span>
+              </div>
+              <div class="form-group">
+                <label for="editVideoTitle">Video Title</label>
+                <input type="text" id="editVideoTitle" class="form-control" placeholder="Title for VideoObject structured data">
+              </div>
+              <div class="form-group">
+                <label for="editVideoDesc">Video Caption / Description</label>
+                <input type="text" id="editVideoDesc" class="form-control" placeholder="Brief description of the video">
+              </div>
+              <div class="form-group">
+                <label for="editVideoPoster">Video Thumbnail / Poster URL</label>
+                <input type="url" id="editVideoPoster" class="form-control" placeholder="https://hoberg.com.ng/images/lagos-lagoon-poster.jpg">
+              </div>
+              <div class="form-group">
+                <label for="editVideoTranscript">Accessible Video Transcript</label>
+                <textarea id="editVideoTranscript" class="form-control" rows="2" placeholder="Optional text transcript for accessibility &amp; crawler indexing"></textarea>
+              </div>
+            </div>
+
+            <!-- Technical SEO Metadata Overrides -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Technical SEO &amp; Open Graph</h2>
+              </div>
+              <div class="form-group">
+                <label for="editSeoTitle">SEO Title Tag (<span id="seoTitleCount">0</span>/65 chars)</label>
+                <input type="text" id="editSeoTitle" class="form-control" placeholder="Defaults to Headline | Hoberg Digital Newsroom">
+              </div>
+              <div class="form-group">
+                <label for="editSeoDesc">Meta Description (<span id="seoDescCount">0</span>/160 chars)</label>
+                <textarea id="editSeoDesc" class="form-control" rows="2" placeholder="Defaults to Executive Summary"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="editCanonicalUrl">Canonical URL</label>
+                <input type="url" id="editCanonicalUrl" class="form-control" placeholder="https://hoberg.com.ng/blog/[slug]">
+              </div>
+              <div class="form-group" style="display:flex; align-items:center; gap:10px;">
+                <input type="checkbox" id="editNoindex" style="width:20px; height:20px;">
+                <label for="editNoindex" style="margin-bottom:0; cursor:pointer;">Exclude from search indexing (<code>noindex</code>)</label>
+              </div>
+            </div>
+
+            <!-- Optional Media Contact Box -->
+            <div class="panel-card">
+              <div class="panel-header">
+                <h2>Press / Media Contact Box</h2>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <input type="checkbox" id="editIncludeMediaContact" style="width:18px; height:18px;">
+                  <label for="editIncludeMediaContact" style="font-size:0.84rem; font-weight:600; cursor:pointer;">Include on Release</label>
+                </div>
+              </div>
+              <div id="mediaContactFields" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="editMcName">Contact Name</label>
+                    <input type="text" id="editMcName" class="form-control" value="Goodluck Iyanu">
+                  </div>
+                  <div class="form-group">
+                    <label for="editMcRole">Role / Desk</label>
+                    <input type="text" id="editMcRole" class="form-control" value="Founder &amp; Owner, Hoberg Digital">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="editMcEmail">Email</label>
+                    <input type="email" id="editMcEmail" class="form-control" value="hello@hoberg.com.ng">
+                  </div>
+                  <div class="form-group">
+                    <label for="editMcPhone">Phone / WhatsApp</label>
+                    <input type="text" id="editMcPhone" class="form-control" value="+234-810-428-9365">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- TAB 3: MEDIA LIBRARY -->
+    <section id="tab-media" class="admin-tab-panel" style="display:none;">
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>Upload New Media Asset (Image or Video)</h2>
+        </div>
+        <form id="mediaUploadForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="libFileInput">Select Photo or Video from iPhone / Device *</label>
+              <input type="file" id="libFileInput" class="form-control" accept="image/jpeg,image/png,image/webp,image/gif,image/svg+xml,video/mp4,video/webm" required>
+            </div>
+            <div class="form-group">
+              <label for="libTitle">Asset Title *</label>
+              <input type="text" id="libTitle" class="form-control" placeholder="e.g. Hoberg Product Launch Screenshot" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="libAlt">Alt Text (Accessibility) *</label>
+              <input type="text" id="libAlt" class="form-control" placeholder="Descriptive alt text for screen readers" required>
+            </div>
+            <div class="form-group">
+              <label for="libCaption">Default Caption</label>
+              <input type="text" id="libCaption" class="form-control" placeholder="Visible caption">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="libCredit">Creator / Credit</label>
+              <input type="text" id="libCredit" class="form-control" value="Hoberg Digital">
+            </div>
+            <div class="form-group">
+              <label for="libLicense">License / Attribution</label>
+              <input type="text" id="libLicense" class="form-control" value="Official Hoberg Media">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="libUploadBtn">Optimize &amp; Upload to Repository</button>
+        </form>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>Registered Newsroom Media Assets</h2>
+        </div>
+        <div id="mediaLibraryGrid" class="media-grid"></div>
+      </div>
+    </section>
+
+    <!-- TAB 4: PUBLICATION & INDEXING STATUS DASHBOARD (PHASE 12) -->
+    <section id="tab-status" class="admin-tab-panel" style="display:none;">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2>Evidence-Based Publication &amp; Indexing Status Dashboard</h2>
+            <p class="form-hint">Never fabricates indexing results. Displays separate, verified statuses for publication, HTTP response, sitemap inclusion, RSS/Atom feeds, metadata, Schema.org JSON-LD, crawlability, and IndexNow notifications.</p>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-outline btn-sm" id="probeLiveUrlsBtn">Verify All Live Public URLs</button>
+            <button type="button" class="btn btn-primary btn-sm" id="triggerIndexNowBtn">Submit / Retry IndexNow</button>
+          </div>
+        </div>
+
+        <div class="status-table-wrap">
+          <table class="status-table" aria-label="Publication and indexing status per article">
+            <thead>
+              <tr>
+                <th>Article / Slug</th>
+                <th>Publication</th>
+                <th>Public URL HTTP</th>
+                <th>XML Sitemap</th>
+                <th>RSS / Atom Feed</th>
+                <th>Metadata</th>
+                <th>JSON-LD Schema</th>
+                <th>Crawlability</th>
+                <th>IndexNow Ping</th>
+                <th>Google Search</th>
+                <th>Bing Status</th>
+                <th>Last Verified</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="statusTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: REDIRECTS, SEO & SEARCH CONSOLE SETUP -->
+    <section id="tab-seo" class="admin-tab-panel" style="display:none;">
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>Discovery Resources &amp; Live Endpoints</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Root XML Sitemap</div>
+            <p style="font-size:0.84rem; margin-top:6px;"><a href="/sitemap.xml" target="_blank" rel="noopener">hoberg.com.ng/sitemap.xml ↗</a></p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Newsroom XML Sitemap</div>
+            <p style="font-size:0.84rem; margin-top:6px;"><a href="/blog/sitemap.xml" target="_blank" rel="noopener">hoberg.com.ng/blog/sitemap.xml ↗</a></p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">RSS 2.0 &amp; Atom Feeds</div>
+            <p style="font-size:0.84rem; margin-top:6px;">
+              <a href="/blog/feed.xml" target="_blank" rel="noopener">RSS 2.0 ↗</a> ·
+              <a href="/blog/atom.xml" target="_blank" rel="noopener">Atom 1.0 ↗</a> ·
+              <a href="/blog/feed.json" target="_blank" rel="noopener">JSON Feed ↗</a>
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">AI Crawler Factsheets</div>
+            <p style="font-size:0.84rem; margin-top:6px;">
+              <a href="/llms.txt" target="_blank" rel="noopener">/llms.txt ↗</a> ·
+              <a href="/blog/llms.txt" target="_blank" rel="noopener">/blog/llms.txt ↗</a> ·
+              <a href="/robots.txt" target="_blank" rel="noopener">/robots.txt ↗</a>
+            </p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">IndexNow Verification Key</div>
+            <p style="font-size:0.84rem; margin-top:6px;"><a href="/4f8b92e1c7d34a6085e2b190f3c6d8a4.txt" target="_blank" rel="noopener">Key Resource (.txt) ↗</a></p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Bing &amp; Yandex Verification</div>
+            <p style="font-size:0.84rem; margin-top:6px;">
+              <a href="/BingSiteAuth.xml" target="_blank" rel="noopener">BingSiteAuth.xml ↗</a> ·
+              <a href="/yandex_a26e770b29df0891.html" target="_blank" rel="noopener">Yandex HTML ↗</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>Permanent Slug Redirects (301 / Canonical Redirect Map)</h2>
+        </div>
+        <form id="addRedirectForm" class="form-row" style="align-items:end; margin-bottom:18px;">
+          <div class="form-group" style="margin-bottom:0;">
+            <label for="redirFrom">Old Path (e.g. /blog/old-slug)</label>
+            <input type="text" id="redirFrom" class="form-control" placeholder="/blog/old-article-slug" required>
+          </div>
+          <div class="form-group" style="margin-bottom:0;">
+            <label for="redirTo">New Target Path (e.g. /blog/new-slug)</label>
+            <input type="text" id="redirTo" class="form-control" placeholder="/blog/new-article-slug" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Redirect &amp; Stub</button>
+        </form>
+        <div id="redirectsList" class="repeater-list"></div>
+      </div>
+
+      <div class="panel-card">
+        <div class="panel-header">
+          <h2>Google Search Console &amp; Bing Webmaster Setup Guide</h2>
+        </div>
+        <div style="font-size:0.9rem; color:var(--ink); display:flex; flex-direction:column; gap:12px;">
+          <p><strong>1. Google Search Console:</strong> Open <a href="https://search.google.com/search-console" target="_blank" rel="noopener">Google Search Console</a> for property <code>https://hoberg.com.ng/</code>. Under <strong>Sitemaps</strong>, submit both <code>https://hoberg.com.ng/sitemap.xml</code> and <code>https://hoberg.com.ng/blog/sitemap.xml</code>. Use the <strong>URL Inspection</strong> tool to inspect newly published <code>https://hoberg.com.ng/blog/[slug]</code> URLs and monitor real Coverage &amp; Page Indexing reports.</p>
+          <p><strong>2. Bing Webmaster Tools &amp; IndexNow:</strong> <code>BingSiteAuth.xml</code> is deployed at <code>https://hoberg.com.ng/BingSiteAuth.xml</code> and the IndexNow verification key file is live at <code>https://hoberg.com.ng/4f8b92e1c7d34a6085e2b190f3c6d8a4.txt</code>. Whenever you publish or update an article, the automated pipeline submits the changed URLs to <code>https://api.indexnow.org/indexnow</code>.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- STICKY BOTTOM ACTION BAR FOR EDITOR -->
+  <div class="editor-sticky-bar" id="editorStickyBar">
+    <div class="editor-sticky-inner">
+      <span class="autosave-indicator" id="autosaveStatusText">Ready to edit</span>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button type="button" class="btn btn-outline btn-sm" style="background:transparent;color:#fff;border-color:rgba(255,255,255,0.35);" id="stickySaveDraftBtn">Save Draft</button>
+        <button type="button" class="btn btn-outline btn-sm" style="background:transparent;color:var(--hoberg-gold);border-color:var(--hoberg-gold);" id="stickyPreviewBtn">Preview &amp; SEO Check</button>
+        <button type="button" class="btn btn-primary btn-sm" id="stickyPublishBtn">Publish &amp; Run Pipeline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREVIEW & PIPELINE REPORT MODAL -->
+  <div class="modal-overlay" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Preview</h3>
+        <button type="button" class="btn btn-danger btn-sm" id="closeModalBtn">Close ✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="/blog/js/newsroom-engine.js"></script>
+  <script src="/blog/js/admin.js"></script>
+</body>
+</html>
