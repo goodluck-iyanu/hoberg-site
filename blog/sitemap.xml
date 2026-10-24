@@ -5,9 +5,20 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-24T14:14:31.044Z</lastmod>
+    <lastmod>2026-10-24T16:59:16.978Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/goodluck-iyanu-ikehungu-founder-hoberg-digital/</loc>
+    <lastmod>2026-10-24T16:59:16.978Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1792861119714-goodluck-iyanu-ikehungu-the-founder-building-hoberg-digital-and-its-vision-for-the-future.png</image:loc>
+      <image:title>Goodluck Iyanu Ikehungu: The Founder Building Hoberg Digital and Its Vision for the Future</image:title>
+      <image:caption>Hoberg Digital official logo</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/hoberg-next-1-0</loc>
