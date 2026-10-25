@@ -5,9 +5,20 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-24T16:59:16.978Z</lastmod>
+    <lastmod>2026-10-25T14:23:20.010Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/goodluck-iyanu-ikehungu-web-developer-lagos-nigeria/</loc>
+    <lastmod>2026-10-25T14:23:20.010Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1792938088516-goodluck-iyanu-ikehungu-is-building-digital-experiences-through-hoberg-digital-agency-in-nigeria.jpg</image:loc>
+      <image:title>Goodluck Iyanu Ikehungu Is Building Digital Experiences Through Hoberg Digital Agency in Nigeria</image:title>
+      <image:caption>What Goodluck Iyanu built</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/goodluck-iyanu-ikehungu-founder-hoberg-digital/</loc>
