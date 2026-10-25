@@ -5,9 +5,20 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-10-25T14:23:20.010Z</lastmod>
+    <lastmod>2026-10-25T15:41:43.449Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/maji-create-online-store-nigeria/</loc>
+    <lastmod>2026-10-25T15:41:43.449Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1792942701446-maji-a-simpler-way-for-nigerian-businesses-to-build-an-online-store.jpg</image:loc>
+      <image:title>Maji: A Simpler Way for Nigerian Businesses to Build an Online Store</image:title>
+      <image:caption>Maji official logo</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://hoberg.com.ng/blog/goodluck-iyanu-ikehungu-web-developer-lagos-nigeria/</loc>
