@@ -1,5 +1,5 @@
 {
-  "lastBuildAt": "2026-11-02T01:03:46.515Z",
+  "lastBuildAt": "2026-11-02T01:04:07.940Z",
   "totalArticles": 14,
   "publishedCount": 14,
   "draftCount": 0,
@@ -24,8 +24,8 @@
       "publicationStatus": "Complete",
       "publicUrl": "https://hoberg.com.ng/blog/sell-on-maji-zero-commission-marketplace-campaign",
       "publicUrlVerification": "Complete",
-      "sitemapInclusion": "Complete",
-      "feedUpdate": "Complete",
+      "sitemapInclusion": "Error",
+      "feedUpdate": "Error",
       "metadataValidation": "Complete",
       "metadataIssues": [],
       "structuredDataValidation": "Complete",
@@ -33,10 +33,12 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Submitted (Via GitHub Actions IndexNow)",
+      "searchEngineNotification": "Submitted",
+      "notificationDetail": "IndexNow accepted 2 URL(s) (HTTP 200). Indexing is determined by participating search engines.",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
-      "bingIndexingStatus": "Submitted (IndexNow Queued on Deploy)",
-      "lastVerifiedAt": "2026-11-02T01:03:46.515Z",
+      "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
+      "notifiedHash": "471e869788f36eb5",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "maji-create-online-store-nigeria": {
@@ -60,7 +62,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "aba7ca3c1623e2bd",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "goodluck-iyanu-ikehungu-web-developer-lagos-nigeri": {
@@ -84,7 +86,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "753948380c4d67cd",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "goodluck-iyanu-ikehungu-founder-hoberg-digital": {
@@ -108,7 +110,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "57097f2f418eb810",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "hoberg-next1-0": {
@@ -132,7 +134,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "a1932eb3f9c349c8",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "hoberg-digital-launches-official-newsroom": {
@@ -156,7 +158,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "00d86cd50430cbb2",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "nigeria-2026-ai-search-visibility-report": {
@@ -180,7 +182,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "9ee0a18cb3cb4fc5",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "tikdrop-and-hoberg-web-tools-release": {
@@ -204,7 +206,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "d04909ee5a2c898f",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "hoberg-digital-brand-and-ecosystem": {
@@ -228,7 +230,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "e16e4affceecb8aa",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "best-website-design-company-nigeria": {
@@ -252,7 +254,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "6182fa46d1dd1676",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "website-design-company-lagos": {
@@ -276,7 +278,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "d572aa62bf1d45d9",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "website-design-cost-nigeria": {
@@ -300,7 +302,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "272d3ef60ecfbcdd",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "ecommerce-website-development": {
@@ -324,7 +326,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "0f62f97bae08140d",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     },
     "corporate-website-design": {
@@ -348,7 +350,7 @@
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
       "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
       "notifiedHash": "932ff898b221fb5e",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "lastVerifiedAt": "2026-11-02T01:04:07.940Z",
       "outstandingActions": []
     }
   }
