@@ -5,9 +5,20 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://hoberg.com.ng/blog</loc>
-    <lastmod>2026-11-02T01:03:46.497Z</lastmod>
+    <lastmod>2026-11-02T01:11:31.651Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://hoberg.com.ng/blog/hoberg-digital-launches-sell-on-maji-campaign</loc>
+    <lastmod>2026-11-02T01:11:31.651Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://hoberg.com.ng/blog/uploads/1793581806551-hoberg-digital-launches-sellonmaji-campaign-to-help-nigerian-merchants-take-their-businesses-fur.png</image:loc>
+      <image:title>Hoberg Digital Launches #SellOnMaji Campaign to Help Nigerian Merchants Take Their Businesses Further</image:title>
+      <image:caption>You’re Already Selling. Now, Go Further. Discover Maji.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>[https://hoberg.com.ng/blog/sell-on-maji-zero-commission-marketplace-campaign](https://hoberg.com.ng/blog/sell-on-maji-zero-commission-marketplace-campaign)</loc>
