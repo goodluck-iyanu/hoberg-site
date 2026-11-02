@@ -1,5 +1,5 @@
 {
-  "lastBuildAt": "2026-11-02T00:49:34.892Z",
+  "lastBuildAt": "2026-11-02T01:03:46.515Z",
   "totalArticles": 14,
   "publishedCount": 14,
   "draftCount": 0,
@@ -24,8 +24,8 @@
       "publicationStatus": "Complete",
       "publicUrl": "https://hoberg.com.ng/blog/sell-on-maji-zero-commission-marketplace-campaign",
       "publicUrlVerification": "Complete",
-      "sitemapInclusion": "Error",
-      "feedUpdate": "Error",
+      "sitemapInclusion": "Complete",
+      "feedUpdate": "Complete",
       "metadataValidation": "Complete",
       "metadataIssues": [],
       "structuredDataValidation": "Complete",
@@ -33,12 +33,10 @@
       "schemaIssues": [],
       "technicalCrawlability": "Complete",
       "crawlIssues": [],
-      "searchEngineNotification": "Submitted",
-      "notificationDetail": "IndexNow accepted 2 URL(s) (HTTP 200). Indexing is determined by participating search engines.",
+      "searchEngineNotification": "Submitted (Via GitHub Actions IndexNow)",
       "googleIndexingStatus": "Not connected (Verify in Google Search Console)",
-      "bingIndexingStatus": "Submitted (IndexNow Accepted — Awaiting Crawl)",
-      "notifiedHash": "25eeb57bae98f32b",
-      "lastVerifiedAt": "2026-11-02T00:49:34.892Z",
+      "bingIndexingStatus": "Submitted (IndexNow Queued on Deploy)",
+      "lastVerifiedAt": "2026-11-02T01:03:46.515Z",
       "outstandingActions": []
     },
     "maji-create-online-store-nigeria": {
